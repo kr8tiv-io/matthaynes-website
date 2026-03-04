@@ -1,0 +1,1024 @@
+.hero {
+  position: relative;
+  min-height: min(100vh, 1100px);
+  display: grid;
+  align-items: end;
+  background: transparent;
+  border-bottom: 0px;
+  color: var(--text);
+}
+
+/* -------------------------------------
+   GLOBAL SCROLLYTELLING LAYERS
+   (Replaces old rigid section boxes)
+--------------------------------------- */
+
+#global-cinematic-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: #ffffff;
+  /* BRIGHT: white base, not black */
+  overflow: hidden;
+}
+
+.global-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+  filter: saturate(1.2) brightness(1.15);
+}
+
+/* First video visibly on load */
+.global-video.active {
+  opacity: 0.6;
+  /* Visible, vibrant ambient video */
+}
+
+#hero-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.78;
+  mix-blend-mode: screen;
+  z-index: 2;
+  /* Over the videos */
+}
+
+.global-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 40%, rgba(255, 255, 255, 0.4) 100%);
+  pointer-events: none;
+}
+
+#global-flora {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  /* Below content, above canvas */
+  pointer-events: none;
+  overflow: hidden;
+}
+
+#global-flora img {
+  position: absolute;
+  /* Use mix-blend mode to drop the white BG, but force any off-white compression artifacts to pure white first
+     so multiply doesn't generate a phantom grey box */
+  mix-blend-mode: multiply;
+  filter: grayscale(1) contrast(3) brightness(1.2);
+  opacity: 0.15;
+  will-change: transform;
+}
+
+.flora-1 {
+  width: clamp(400px, 45vw, 750px);
+  top: 15vh;
+  left: -8vw;
+}
+
+.flora-2 {
+  width: clamp(500px, 50vw, 850px);
+  top: 60vh;
+  right: -10vw;
+}
+
+.hero-overlay {
+  display: none;
+  /* Handled by global scrim now */
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 10;
+  /* Bring above global fixed layers */
+  padding-block: clamp(6rem, 16vw, 11.6rem) clamp(3.2rem, 6vw, 5.8rem);
+  display: grid;
+  gap: 1.65rem;
+}
+
+.hero h1 {
+  max-width: 13ch;
+}
+
+.hero-copy {
+  max-width: 860px;
+}
+
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.64rem;
+}
+
+.hero-meta span {
+  border: 1px solid rgba(7, 23, 33, 0.14);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.82);
+  color: #2f505f;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.76rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.logo-rail-section {
+  padding: 0.9rem 0 1.5rem;
+}
+
+.logo-rail-title {
+  font-size: 1rem;
+  margin-bottom: 0.72rem;
+  color: #23475a;
+}
+
+.logo-rail {
+  border: none;
+  border-radius: 0px;
+  background: transparent;
+  overflow: hidden;
+  display: flex;
+}
+
+.logo-track {
+  display: flex;
+  gap: 0.55rem;
+  min-width: max-content;
+  padding: 0.62rem;
+  animation: logoMarquee 34s linear infinite;
+}
+
+.logo-rail:hover .logo-track {
+  animation-play-state: paused;
+}
+
+.logo-pill {
+  all: unset;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.62rem;
+  padding: 0.72rem 1.4rem;
+  background: transparent !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  color: var(--text);
+  cursor: pointer;
+  border-radius: var(--radius-full);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  white-space: nowrap;
+  font-family: "Sora", sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+}
+
+.logo-pill img {
+  height: 24px;
+  width: auto;
+  mix-blend-mode: multiply !important;
+  /* Forces the drop out of the white background for these JPGs/PNGs */
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.logo-pill:hover {
+  background: transparent !important;
+  opacity: 0.7;
+  transform: translateY(-2px);
+}
+
+@keyframes logoMarquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.maintainer-section {
+  padding-top: clamp(3rem, 7vw, 5.2rem);
+}
+
+.maintainer-card {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
+  padding: clamp(2.4rem, 4vw, 3.8rem) 0;
+  /* Expanded horizontal spacing, removed side padding for borderless list feel */
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.8rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.maintainer-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at 12% 8%, rgba(255, 255, 255, 0.1), transparent 52%);
+}
+
+.maintainer-avatar-wrap {
+  align-self: start;
+}
+
+.maintainer-avatar {
+  width: clamp(66px, 8vw, 94px);
+  height: clamp(66px, 8vw, 94px);
+  border-radius: 0px;
+  object-fit: cover;
+  border: 3px solid rgba(14, 166, 133, 0.23);
+}
+
+.maintainer-copy {
+  display: grid;
+  gap: 0.48rem;
+}
+
+.maintainer-label {
+  font-size: 1rem;
+  color: var(--text);
+  /* High contrast */
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.maintainer-subtitle {
+  color: #e2e8f0;
+  /* Soft contrast passing 4.5:1 */
+  font-size: 0.93rem;
+}
+
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.chip-row a {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-md);
+  font-size: 0.76rem;
+  font-weight: 800;
+  color: var(--text);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.05);
+  /* borderless dark glass approach */
+  padding: 0.36rem 0.68rem;
+  transition: all 0.3s ease;
+}
+
+.chip-row a:hover {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.notice-grid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.notice-card {
+  border-left: 2px solid #0ea685;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  background: transparent;
+  padding: 1.5rem 0 1.5rem 2rem;
+  box-shadow: none;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.notice-card h3 {
+  font-size: 1.02rem;
+}
+
+.story-section {
+  position: relative;
+  z-index: 10;
+  /* Above fixed BG */
+  overflow: visible;
+  /* Removing rigid clip layout of old square theme */
+  padding-block: clamp(6.5rem, 12.5vw, 16rem) clamp(8rem, 16vw, 15rem);
+}
+
+.story-grid {
+  display: grid;
+  gap: clamp(4rem, 8vw, 8rem);
+  align-items: center;
+}
+
+@media (min-width: 900px) {
+  .story-grid {
+    grid-template-columns: 1fr 1fr;
+    /* This makes the grid 50/50, ensuring right side content is positioned beautifully */
+  }
+}
+
+.story-portrait {
+  position: relative;
+  width: 100%;
+  max-width: 460px;
+  /* Reduced by ~30% from the previous implied size/clamping */
+  aspect-ratio: 1;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  /* keep to clip the circle */
+}
+
+.story-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Make sure we don't scale it past its bounds */
+  transform: scale(1);
+  filter: contrast(1.1) saturate(1.1);
+}
+
+.story-copy {
+  display: grid;
+  gap: 1rem;
+}
+
+.manifesto-section {
+  padding-top: clamp(3rem, 8vw, 5.2rem);
+}
+
+.manifesto-wrap {
+  border: none;
+  border-radius: 0px;
+  background: transparent;
+  padding: clamp(2rem, 6vw, 4rem) 0;
+  display: grid;
+  gap: clamp(1.5rem, 3vw, 2.2rem);
+  overflow: clip;
+}
+
+img.parallax-flora {
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  outline: none !important;
+  margin: 0;
+  padding: 0;
+  mix-blend-mode: multiply !important;
+}
+
+.manifesto-line {
+  font-family: "NeueMachina", "Sora", sans-serif;
+  font-size: clamp(1.5rem, 4.4vw, 4.1rem);
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+  color: var(--text);
+  opacity: 0.16;
+  filter: blur(5px);
+  transform: translateX(26px) translateY(10px) scale(0.985);
+  clip-path: inset(0 0 100% 0);
+  transition: opacity 0.42s ease, transform 0.42s ease, filter 0.42s ease, clip-path 0.5s ease;
+}
+
+.manifesto-line.is-active {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0) translateY(0) scale(1);
+  clip-path: inset(0 0 0 0);
+}
+
+.operator-system-section {
+  padding-top: clamp(3rem, 8vw, 6rem);
+}
+
+.operator-system-shell {
+  position: relative;
+  border: none;
+  border-radius: 0px;
+  min-height: clamp(520px, 74vh, 760px);
+  background: transparent;
+  box-shadow: none;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: minmax(auto, 380px) 1fr;
+  gap: clamp(0.8rem, 2vw, 1.5rem);
+  align-items: center;
+  padding: clamp(0.9rem, 2vw, 1.4rem);
+  backdrop-filter: blur(24px) saturate(1.2);
+}
+
+.operator-visual {
+  position: relative;
+  min-height: clamp(420px, 58vw, 620px);
+  border-radius: 0px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: transparent;
+  backdrop-filter: blur(8px);
+}
+
+.webgl-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#operator-canvas {
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  pointer-events: none;
+  /* Let hover hit the container */
+}
+
+#jungle-constellation {
+  width: 120%;
+  height: 120%;
+  max-width: none;
+  pointer-events: none;
+}
+
+.pulse-ring {
+  transform-origin: center;
+  animation: pulse-ring-anim 4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@keyframes pulse-ring-anim {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.8;
+    stroke-width: 2px;
+  }
+
+  70% {
+    transform: scale(3.5);
+    opacity: 0;
+    stroke-width: 0.5px;
+  }
+
+  100% {
+    transform: scale(3.5);
+    opacity: 0;
+    stroke-width: 0px;
+  }
+}
+
+.system-card-stack {
+  position: relative;
+  width: 100%;
+  display: grid;
+  gap: 0.8rem;
+  z-index: 2;
+  align-self: center;
+}
+
+.system-card {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 0px;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 0.92rem 1rem;
+  display: grid;
+  gap: 0.44rem;
+  opacity: 0.6;
+  transform: translateY(2px) scale(0.995);
+  transition: opacity 0.35s ease, transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+.system-card.active {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  border-color: rgba(14, 166, 133, 0.27);
+  box-shadow: 0 18px 42px rgba(8, 56, 50, 0.14), 0 0 24px rgba(14, 166, 133, 0.12);
+}
+
+.stage-index {
+  display: inline-flex;
+  width: fit-content;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-sm);
+  background: rgba(10, 20, 25, 0.5);
+  color: var(--text);
+  font-size: 0.67rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.24rem 0.5rem;
+  backdrop-filter: blur(4px);
+}
+
+.system-card h3 {
+  font-size: clamp(1rem, 1.35vw, 1.36rem);
+}
+
+.system-card p {
+  font-size: 0.92rem;
+}
+
+.venture-grid .card {
+  min-height: 228px;
+}
+
+.repo-grid .repo-card {
+  min-height: 248px;
+}
+
+.repo-tag {
+  width: fit-content;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-sm);
+  background: rgba(10, 20, 25, 0.6);
+  color: var(--text);
+  font-size: 0.65rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  font-weight: 800;
+  padding: 0.24rem 0.52rem;
+  backdrop-filter: blur(6px);
+}
+
+.aura-grid .aura-card img {
+  width: 100%;
+  /* Increased height and changed object-fit to prevent top/bottom cutoff */
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  /* keep it centered */
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(7, 23, 33, 0.1);
+}
+
+.booking-card {
+  border: 1px solid var(--line);
+  border-radius: 0px;
+  box-shadow: var(--shadow-soft);
+  background: linear-gradient(140deg, rgba(255, 255, 255, 0.88), rgba(248, 252, 250, 0.74));
+  padding: clamp(1.15rem, 3vw, 1.9rem);
+  margin-bottom: 1rem;
+  display: grid;
+  gap: 0.72rem;
+  backdrop-filter: blur(16px);
+}
+
+.booking-note {
+  font-size: 0.84rem;
+  color: #4f6b78;
+}
+
+.video-story-band {
+  position: relative;
+  min-height: clamp(440px, 66vw, 900px);
+  display: grid;
+  align-items: end;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  overflow: clip;
+}
+
+.video-story-band::before,
+.video-story-band::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.video-story-band::before {
+  top: 0;
+  height: 28%;
+  background: linear-gradient(180deg, rgba(243, 249, 251, 0.9) 0%, rgba(243, 249, 251, 0) 100%);
+}
+
+.video-story-band::after {
+  bottom: 0;
+  height: 36%;
+  background: linear-gradient(180deg, rgba(243, 249, 251, 0) 0%, rgba(243, 249, 251, 0.92) 100%);
+}
+
+.story-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.96) contrast(1.06) brightness(0.96);
+  z-index: 0;
+}
+
+.operator-system-section {
+  position: relative;
+  overflow: visible;
+  /* we want the card 3D transforms to pop out */
+  border-top: 1px solid var(--line);
+  background: transparent;
+}
+
+.story-video-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(180deg,
+      rgba(10, 20, 25, 0.4) 0%,
+      rgba(0, 0, 0, 0.6) 20%,
+      rgba(0, 0, 0, 0.4) 50%,
+      rgba(0, 0, 0, 0.5) 80%,
+      rgba(10, 20, 25, 0.8) 100%);
+}
+
+.video-story-band .story-video {
+  mix-blend-mode: luminosity;
+  opacity: 0.12;
+}
+
+.story-video-content {
+  position: relative;
+  z-index: 3;
+  display: grid;
+  gap: 1rem;
+  padding-bottom: clamp(2.4rem, 6vw, 5rem);
+}
+
+.story-video-content h2,
+.story-video-content p,
+.story-video-content .kicker {
+  color: var(--text);
+}
+
+.story-video-content .kicker {
+  border-color: rgba(245, 251, 255, 0.35);
+  background: rgba(245, 251, 255, 0.14);
+}
+
+.video-story-band .story-copy h2 {
+  color: var(--text);
+  margin-bottom: 0.85rem;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+}
+
+.story-copy p {
+  color: #d1e8e5;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.story-video-content {
+  position: relative;
+  z-index: 10;
+  max-width: 880px;
+  margin-inline: auto;
+  margin-top: clamp(6.2rem, 14vw, 15rem);
+  text-align: center;
+}
+
+.story-video-content h2 {
+  color: var(--text);
+  margin-bottom: 0.85rem;
+  font-size: clamp(2.4rem, 5.5vw, 5.8rem);
+  text-shadow: 0 10px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.story-video-content p {
+  color: #eff5f5;
+  /* Lighten text */
+  text-shadow: 0 4px 16px rgba(0, 0, 0, 0.6), 0 0 8px rgba(0, 0, 0, 0.4);
+  font-weight: 500;
+}
+
+.timeline-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.timeline-item {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 0px;
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  display: grid;
+  gap: 0.5rem;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.capability-grid .card {
+  min-height: 215px;
+}
+
+.operator-shell {
+  position: relative;
+  margin-top: 4rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--line);
+  /* Pure glassmorphism - zero opaque bg */
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  padding: 2px;
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.08);
+}
+
+.contact-wrap {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.88), rgba(244, 250, 255, 0.78));
+  padding: clamp(1.2rem, 3vw, 2rem);
+  backdrop-filter: blur(12px);
+}
+
+/* Form */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.contact-grid .full {
+  grid-column: 1 / -1;
+}
+
+.field.full {
+  grid-column: 1 / -1;
+}
+
+/* =========================================
+   TROPICAL ADVENTURE MASSIVE BACKGROUNDS
+   ========================================= */
+.massive-bg-video-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
+}
+
+.massive-bg-video-wrap .hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.75;
+  mix-blend-mode: luminosity;
+  filter: contrast(1.1) brightness(1.2);
+}
+
+.massive-bg-overlay {
+  display: none;
+}
+
+.massive-bg-overlay.inverted {
+  display: none;
+}
+
+.story-section,
+.timeline-section {
+  position: relative;
+  /* Ensure relative for absolute background to attach */
+  overflow: hidden;
+}
+
+.story-grid,
+.timeline-grid {
+  position: relative;
+  z-index: 2;
+  /* Content floats above massive bg video */
+}
+
+/* =========================================
+   TROPICAL FLORA PARALLAX GSAP LAYERS
+   ========================================= */
+.parallax-flora {
+  position: absolute;
+  z-index: 1;
+  /* Behind content, above video */
+  opacity: 0.85;
+  /* Soft painted look */
+  pointer-events: none;
+  /* multiply strips the white background off the images, making them float seamlessly */
+  mix-blend-mode: multiply;
+  will-change: transform;
+}
+
+/* Specific Placements */
+.flora-1 {
+  top: -10%;
+  right: -5%;
+  width: 450px;
+  transform: rotate(-15deg);
+}
+
+.flora-2 {
+  bottom: 10%;
+  left: -10%;
+  width: 550px;
+  transform: rotate(25deg);
+  opacity: 0.4;
+  filter: blur(4px);
+  /* Faux depth of field */
+}
+
+.flora-3 {
+  top: 40%;
+  right: -15%;
+  width: 600px;
+  transform: rotate(10deg);
+  opacity: 0.3;
+  filter: blur(6px);
+}
+
+.flora-4 {
+  top: -5%;
+  left: -5%;
+  width: 500px;
+  transform: rotate(45deg);
+}
+
+.flora-5 {
+  bottom: -5%;
+  right: -10%;
+  width: 400px;
+  transform: rotate(-30deg);
+  opacity: 0.5;
+}
+
+/* Mid-Section and Bottom Overlay Typography */
+.mid-video-text-overlay,
+.bottom-video-text-overlay {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 800px;
+  margin: 8rem auto 4rem;
+  padding: 4rem;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.mid-video-text-overlay h2,
+.bottom-video-text-overlay h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 10px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.field {
+  display: grid;
+  gap: 0.33rem;
+}
+
+.field label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #33515f;
+  font-weight: 800;
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  border: 1px solid rgba(7, 23, 33, 0.16);
+  border-radius: 9px;
+  padding: 0.74rem 0.86rem;
+  font: inherit;
+  color: var(--text);
+  background: #fbfeff;
+}
+
+.field textarea {
+  min-height: 148px;
+  resize: vertical;
+}
+
+.hidden-honeypot {
+  position: absolute;
+  left: -99999px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.form-state {
+  margin-top: 0.7rem;
+  min-height: 1.4em;
+  font-size: 0.9rem;
+}
+
+.form-state.success {
+  color: #0d7f5d;
+}
+
+.form-state.error {
+  color: #ba4251;
+}
+
+@media (max-width: 1100px) {
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .operator-system-shell {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .operator-visual {
+    min-height: 430px;
+  }
+
+  .system-card-stack {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .repo-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 880px) {
+  .system-card-stack {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .system-card {
+    opacity: 1;
+    transform: none;
+  }
+
+  .operator-visual {
+    min-height: 360px;
+  }
+}
+
+@media (max-width: 760px) {
+  .hero {
+    min-height: 90vh;
+  }
+
+  .hero h1 {
+    max-width: 100%;
+  }
+
+  .hero-inner {
+    padding-block: 8.4rem 3rem;
+  }
+
+  .maintainer-card,
+  .notice-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-meta span {
+    font-size: 0.68rem;
+  }
+
+  .logo-track {
+    animation-duration: 22s;
+  }
+
+  .repo-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .aura-grid .aura-card img {
+    height: 180px;
+  }
+}

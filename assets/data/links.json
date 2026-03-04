@@ -1,0 +1,591 @@
+{
+    "items": [
+        {
+            "title": "KR8TiV AI",
+            "description": "AI and software agency building autonomous systems, mission-control infrastructure, and execution tooling.",
+            "url": "https://kr8tiv.ai/",
+            "category": "Core Projects",
+            "subcategory": "KR8TiV",
+            "author": "Matt Haynes",
+            "tags": [
+                "AI",
+                "Agency",
+                "Automation",
+                "Software"
+            ]
+        },
+        {
+            "title": "KR8TiV Agency (IO)",
+            "description": "Marketing agency focused on brand strategy, growth systems, GTM execution, and founder positioning.",
+            "url": "https://kr8tiv.io/",
+            "category": "Core Projects",
+            "subcategory": "KR8TiV",
+            "author": "Matt Haynes",
+            "tags": [
+                "Marketing",
+                "Agency",
+                "Growth",
+                "Branding"
+            ]
+        },
+        {
+            "title": "Jarvis LifeOS",
+            "description": "Trading and life-operations stack built for signal + execution. The core Jarvis system repository.",
+            "url": "https://jarvislife.io/",
+            "category": "Core Projects",
+            "subcategory": "Jarvis",
+            "author": "Matt Haynes",
+            "tags": [
+                "Trading",
+                "LifeOS",
+                "Automation",
+                "Python"
+            ]
+        },
+        {
+            "title": "MeetYourKIN",
+            "description": "Relationship intelligence product focused on emotional context, communication clarity, and conflict navigation.",
+            "url": "https://meetyourkin.com/",
+            "category": "Core Projects",
+            "subcategory": "KIN",
+            "author": "Matt Haynes",
+            "tags": [
+                "Relationships",
+                "AI",
+                "Product",
+                "Psychology"
+            ]
+        },
+        {
+            "title": "Aurora Ventures Linktree",
+            "description": "Strategy and venture studio layer for capital, partnerships, and operator-level incubation.",
+            "url": "https://linktr.ee/auroraventures",
+            "category": "Core Projects",
+            "subcategory": "Aurora",
+            "author": "Matt Haynes",
+            "tags": [
+                "Ventures",
+                "Capital",
+                "Incubation"
+            ]
+        },
+        {
+            "title": "Aura H2O",
+            "description": "Clean water initiative with public docs and community-oriented intent. Paused but part of the story.",
+            "url": "https://aurah2o.net/",
+            "category": "Ecosystem Projects",
+            "subcategory": "Aura",
+            "author": "Matt Haynes",
+            "tags": [
+                "Water",
+                "Social Impact",
+                "Community"
+            ]
+        },
+        {
+            "title": "Aura Farms",
+            "description": "Food and agriculture direction focused on resilient local production models.",
+            "url": "https://www.aurafarming.net/",
+            "category": "Ecosystem Projects",
+            "subcategory": "Aura",
+            "author": "Matt Haynes",
+            "tags": [
+                "Agriculture",
+                "Sustainability",
+                "Food"
+            ]
+        },
+        {
+            "title": "Aura BnB",
+            "description": "Unique-stay concept currently on hold, open to seed-aligned collaboration.",
+            "url": "https://x.com/aura_bnb",
+            "category": "Ecosystem Projects",
+            "subcategory": "Aura",
+            "author": "Matt Haynes",
+            "tags": [
+                "Hospitality",
+                "Stays",
+                "Costa Rica"
+            ]
+        },
+        {
+            "title": "Cursor AI",
+            "description": "AI-first code editor with deep LLM integration. Fast, intelligent autocomplete and codebase-aware chat.",
+            "url": "https://cursor.sh/",
+            "category": "AI Tools",
+            "subcategory": "Dev Tools",
+            "author": "Cursor",
+            "tags": [
+                "IDE",
+                "AI Coding",
+                "Autocomplete",
+                "LLM"
+            ]
+        },
+        {
+            "title": "Claude by Anthropic",
+            "description": "Large language model with extended context windows and strong reasoning. Used heavily for code and analysis.",
+            "url": "https://claude.ai/",
+            "category": "AI Tools",
+            "subcategory": "LLM",
+            "author": "Anthropic",
+            "tags": [
+                "LLM",
+                "Reasoning",
+                "API",
+                "Code"
+            ]
+        },
+        {
+            "title": "OpenAI Platform",
+            "description": "GPT models, API access, assistants, and multimodal capabilities for AI-native products.",
+            "url": "https://platform.openai.com/",
+            "category": "AI Tools",
+            "subcategory": "LLM",
+            "author": "OpenAI",
+            "tags": [
+                "GPT",
+                "API",
+                "Assistants",
+                "LLM"
+            ]
+        },
+        {
+            "title": "Perplexity AI",
+            "description": "AI-powered answer engine with real-time web search and citation. Good for rapid research validation.",
+            "url": "https://perplexity.ai/",
+            "category": "AI Tools",
+            "subcategory": "Search",
+            "author": "Perplexity",
+            "tags": [
+                "Search",
+                "Research",
+                "Citations",
+                "AI"
+            ]
+        },
+        {
+            "title": "LangChain",
+            "description": "Framework for developing applications powered by language models. Chains, agents, and retrieval patterns.",
+            "url": "https://www.langchain.com/",
+            "category": "AI Tools",
+            "subcategory": "Frameworks",
+            "author": "LangChain",
+            "tags": [
+                "Framework",
+                "Agents",
+                "RAG",
+                "LLM"
+            ]
+        },
+        {
+            "title": "CrewAI",
+            "description": "Multi-agent orchestration framework for role-based AI teams that collaborate on complex tasks.",
+            "url": "https://www.crewai.com/",
+            "category": "AI Tools",
+            "subcategory": "Agents",
+            "author": "CrewAI",
+            "tags": [
+                "Multi-Agent",
+                "Orchestration",
+                "Automation"
+            ]
+        },
+        {
+            "title": "Hugging Face",
+            "description": "Open-source ML model hub. Models, datasets, spaces, and inference APIs for every modality.",
+            "url": "https://huggingface.co/",
+            "category": "AI Tools",
+            "subcategory": "Models",
+            "author": "Hugging Face",
+            "tags": [
+                "Models",
+                "Open Source",
+                "ML",
+                "Datasets"
+            ]
+        },
+        {
+            "title": "Shodan",
+            "description": "Search engine for internet-connected devices. Essential for attack surface mapping and reconnaissance.",
+            "url": "https://shodan.io/",
+            "category": "Security & OSINT",
+            "subcategory": "Recon",
+            "author": "Shodan",
+            "tags": [
+                "OSINT",
+                "Recon",
+                "IoT",
+                "Scanner"
+            ]
+        },
+        {
+            "title": "OWASP Top 10",
+            "description": "The standard awareness document for web application security. Critical reading for any builder.",
+            "url": "https://owasp.org/www-project-top-ten/",
+            "category": "Security & OSINT",
+            "subcategory": "Standards",
+            "author": "OWASP",
+            "tags": [
+                "Web Security",
+                "Standards",
+                "Vulnerabilities"
+            ]
+        },
+        {
+            "title": "Have I Been Pwned",
+            "description": "Check if your email or phone has been compromised in a data breach. Essential operational hygiene.",
+            "url": "https://haveibeenpwned.com/",
+            "category": "Security & OSINT",
+            "subcategory": "Personal Security",
+            "author": "Troy Hunt",
+            "tags": [
+                "Breach Check",
+                "Privacy",
+                "Email"
+            ]
+        },
+        {
+            "title": "VirusTotal",
+            "description": "Multi-engine file and URL scanner. Quick validation before clicking anything sketchy.",
+            "url": "https://www.virustotal.com/",
+            "category": "Security & OSINT",
+            "subcategory": "Scanning",
+            "author": "Google",
+            "tags": [
+                "Malware",
+                "Scanner",
+                "URLs",
+                "Files"
+            ]
+        },
+        {
+            "title": "The Hacker News",
+            "description": "Cybersecurity news and analysis. Daily reading for staying ahead of emerging threats.",
+            "url": "https://thehackernews.com/",
+            "category": "Security & OSINT",
+            "subcategory": "News",
+            "author": "THN",
+            "tags": [
+                "News",
+                "Cybersecurity",
+                "Threats"
+            ]
+        },
+        {
+            "title": "TradingView",
+            "description": "Charting platform for crypto, stocks, and forex. Pine Script for custom indicators and strategy backtesting.",
+            "url": "https://tradingview.com/",
+            "category": "Trading Systems",
+            "subcategory": "Charting",
+            "author": "TradingView",
+            "tags": [
+                "Charts",
+                "Pine Script",
+                "Crypto",
+                "Stocks"
+            ]
+        },
+        {
+            "title": "Jupiter Exchange",
+            "description": "Solana DEX aggregator. Core swap infrastructure for the Jarvis trading stack.",
+            "url": "https://jup.ag/",
+            "category": "Trading Systems",
+            "subcategory": "DEX",
+            "author": "Jupiter",
+            "tags": [
+                "Solana",
+                "DEX",
+                "Swap",
+                "DeFi"
+            ]
+        },
+        {
+            "title": "Dexscreener",
+            "description": "Real-time token charts and pair discovery across Solana, Ethereum, and other chains.",
+            "url": "https://dexscreener.com/",
+            "category": "Trading Systems",
+            "subcategory": "Analytics",
+            "author": "Dexscreener",
+            "tags": [
+                "Charts",
+                "Token Discovery",
+                "DeFi"
+            ]
+        },
+        {
+            "title": "Birdeye",
+            "description": "Solana-focused DeFi analytics with wallet tracking, token overview, and real-time price feeds.",
+            "url": "https://birdeye.so/",
+            "category": "Trading Systems",
+            "subcategory": "Analytics",
+            "author": "Birdeye",
+            "tags": [
+                "Solana",
+                "Analytics",
+                "Wallet",
+                "DeFi"
+            ]
+        },
+        {
+            "title": "CoinGecko",
+            "description": "Comprehensive crypto data aggregator. Market caps, volumes, and fundamental metrics across chains.",
+            "url": "https://www.coingecko.com/",
+            "category": "Trading Systems",
+            "subcategory": "Data",
+            "author": "CoinGecko",
+            "tags": [
+                "Crypto",
+                "Market Data",
+                "Pricing"
+            ]
+        },
+        {
+            "title": "Notion",
+            "description": "Connected workspace for docs, projects, and wikis. Core operational backbone for team knowledge.",
+            "url": "https://notion.so/",
+            "category": "Founder Operations",
+            "subcategory": "Productivity",
+            "author": "Notion",
+            "tags": [
+                "Docs",
+                "Project Management",
+                "Wiki"
+            ]
+        },
+        {
+            "title": "Linear",
+            "description": "Issue tracking and project management built for speed. Keyboard-first, clean, and opinionated.",
+            "url": "https://linear.app/",
+            "category": "Founder Operations",
+            "subcategory": "Project Management",
+            "author": "Linear",
+            "tags": [
+                "Issues",
+                "Sprints",
+                "Engineering"
+            ]
+        },
+        {
+            "title": "Cal.com",
+            "description": "Open-source scheduling infrastructure. Used for booking calls and meeting coordination.",
+            "url": "https://cal.com/",
+            "category": "Founder Operations",
+            "subcategory": "Scheduling",
+            "author": "Cal.com",
+            "tags": [
+                "Calendar",
+                "Booking",
+                "Open Source"
+            ]
+        },
+        {
+            "title": "Vercel",
+            "description": "Frontend cloud platform. Deploy Next.js and static sites with zero-config CI/CD.",
+            "url": "https://vercel.com/",
+            "category": "Founder Operations",
+            "subcategory": "Deployment",
+            "author": "Vercel",
+            "tags": [
+                "Hosting",
+                "CI/CD",
+                "Next.js",
+                "Edge"
+            ]
+        },
+        {
+            "title": "GitHub",
+            "description": "Version control and collaboration platform. All active repos live here across KR8TiV and Aurora orgs.",
+            "url": "https://github.com/",
+            "category": "Founder Operations",
+            "subcategory": "Dev Tools",
+            "author": "GitHub",
+            "tags": [
+                "Git",
+                "Repos",
+                "Collaboration",
+                "CI"
+            ]
+        },
+        {
+            "title": "Stripe",
+            "description": "Payment infrastructure for the internet. Handles billing, subscriptions, and financial tooling.",
+            "url": "https://stripe.com/",
+            "category": "Founder Operations",
+            "subcategory": "Payments",
+            "author": "Stripe",
+            "tags": [
+                "Payments",
+                "Billing",
+                "SaaS",
+                "API"
+            ]
+        },
+        {
+            "title": "Solana",
+            "description": "High-performance blockchain for DeFi and consumer applications. Core chain for Jarvis trading stack.",
+            "url": "https://solana.com/",
+            "category": "Blockchain",
+            "subcategory": "L1",
+            "author": "Solana Foundation",
+            "tags": [
+                "L1",
+                "DeFi",
+                "Speed",
+                "Solana"
+            ]
+        },
+        {
+            "title": "Ethereum",
+            "description": "Smart contract platform and the anchor chain for DeFi, NFTs, and EVM-compatible protocols.",
+            "url": "https://ethereum.org/",
+            "category": "Blockchain",
+            "subcategory": "L1",
+            "author": "Ethereum Foundation",
+            "tags": [
+                "L1",
+                "Smart Contracts",
+                "EVM",
+                "DeFi"
+            ]
+        },
+        {
+            "title": "Alvara Protocol",
+            "description": "ERC-7621 basket token standard for on-chain fund management and basket investing.",
+            "url": "https://alvara.xyz/",
+            "category": "Blockchain",
+            "subcategory": "DeFi Protocol",
+            "author": "Alvara",
+            "tags": [
+                "ERC-7621",
+                "Baskets",
+                "DeFi",
+                "Fund Management"
+            ]
+        },
+        {
+            "title": "Phantom Wallet",
+            "description": "Multi-chain crypto wallet for Solana, Ethereum, and Polygon. Clean UX and swap integration.",
+            "url": "https://phantom.app/",
+            "category": "Blockchain",
+            "subcategory": "Wallets",
+            "author": "Phantom",
+            "tags": [
+                "Wallet",
+                "Solana",
+                "Ethereum",
+                "Multi-chain"
+            ]
+        },
+        {
+            "title": "Etherscan",
+            "description": "Ethereum blockchain explorer. Contract verification, gas tracking, and on-chain analytics.",
+            "url": "https://etherscan.io/",
+            "category": "Blockchain",
+            "subcategory": "Explorer",
+            "author": "Etherscan",
+            "tags": [
+                "Explorer",
+                "Ethereum",
+                "Contracts",
+                "Gas"
+            ]
+        },
+        {
+            "title": "Solscan",
+            "description": "Solana blockchain explorer with transaction history, token tracking, and validator analytics.",
+            "url": "https://solscan.io/",
+            "category": "Blockchain",
+            "subcategory": "Explorer",
+            "author": "Solscan",
+            "tags": [
+                "Explorer",
+                "Solana",
+                "Transactions"
+            ]
+        },
+        {
+            "title": "Weavy AI",
+            "description": "AI-powered content and workflow tool building under the KR8TiV umbrella.",
+            "url": "https://x.com/Weavy_ai",
+            "category": "Core Projects",
+            "subcategory": "AI Tools",
+            "author": "Matt Haynes",
+            "tags": [
+                "AI",
+                "Content",
+                "Workflow"
+            ]
+        },
+        {
+            "title": "GSAP (GreenSock)",
+            "description": "Professional-grade JavaScript animation library. Powers all scroll-triggered motion on this site.",
+            "url": "https://gsap.com/",
+            "category": "Dev Resources",
+            "subcategory": "Animation",
+            "author": "GreenSock",
+            "tags": [
+                "Animation",
+                "GSAP",
+                "ScrollTrigger",
+                "Motion"
+            ]
+        },
+        {
+            "title": "Three.js",
+            "description": "3D graphics library for the web. WebGL abstraction used for the background effects on this site.",
+            "url": "https://threejs.org/",
+            "category": "Dev Resources",
+            "subcategory": "3D / WebGL",
+            "author": "mrdoob",
+            "tags": [
+                "WebGL",
+                "3D",
+                "Graphics",
+                "Canvas"
+            ]
+        },
+        {
+            "title": "Lenis Scroll",
+            "description": "Smooth scroll library for modern websites. Buttery inertial scrolling used throughout this site.",
+            "url": "https://lenis.darkroom.engineering/",
+            "category": "Dev Resources",
+            "subcategory": "Scroll",
+            "author": "Darkroom",
+            "tags": [
+                "Scroll",
+                "Smooth",
+                "Performance",
+                "UX"
+            ]
+        },
+        {
+            "title": "Supabase",
+            "description": "Open-source Firebase alternative. Postgres database, auth, storage, and edge functions.",
+            "url": "https://supabase.com/",
+            "category": "Dev Resources",
+            "subcategory": "Backend",
+            "author": "Supabase",
+            "tags": [
+                "Database",
+                "Auth",
+                "Postgres",
+                "BaaS"
+            ]
+        },
+        {
+            "title": "Tailwind CSS",
+            "description": "Utility-first CSS framework for rapidly building modern interfaces without writing custom CSS.",
+            "url": "https://tailwindcss.com/",
+            "category": "Dev Resources",
+            "subcategory": "CSS",
+            "author": "Tailwind Labs",
+            "tags": [
+                "CSS",
+                "Utility",
+                "Framework",
+                "Design"
+            ]
+        }
+    ]
+}

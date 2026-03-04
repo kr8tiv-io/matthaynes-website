@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matt Haynes | Founder, Operator, Designer</title>
+  <meta name="description"
+    content="Matt Haynes is a Costa Rica-based founder/operator building KR8TiV AI, KR8TiV Agency, Jarvis LifeOS, MeetYourKIN, and Aurora Ventures systems across AI, growth, and blockchain." />
+  <meta name="keywords"
+    content="Matt Haynes, KR8TiV AI, KR8TiV Agency, Jarvis LifeOS, MeetYourKIN, Aurora Ventures, startup founder, AI automation" />
+  <meta name="author" content="Matt Haynes" />
+  <meta name="theme-color" content="#f5fbfd" />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://matthaynes.fun/" />
+  <link rel="icon" type="image/png" href="/assets/media/brands/aurora-symbol.png" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Matt Haynes" />
+  <meta property="og:title" content="Matt Haynes | Founder, Operator, Designer" />
+  <meta property="og:description"
+    content="Cinematic founder story, active ventures, live GitHub builds, and consulting paths." />
+  <meta property="og:url" content="https://matthaynes.fun/" />
+  <meta property="og:image" content="https://matthaynes.fun/links-preview.png" />
+  <meta property="og:image:alt" content="Matt Haynes website preview" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@aurora_ventures" />
+  <meta name="twitter:creator" content="@aurora_ventures" />
+  <meta name="twitter:title" content="Matt Haynes | Founder, Operator, Designer" />
+  <meta name="twitter:description" content="Founder story, active builds, and operator-grade link intelligence." />
+  <meta name="twitter:image" content="https://matthaynes.fun/links-preview.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Matt Haynes",
+    "jobTitle": "Founder & CEO",
+    "description": "Founder, designer, and operator building KR8TiV AI, KR8TiV Agency, Aurora Ventures, Jarvis LifeOS, and MeetYourKIN.",
+    "url": "https://matthaynes.fun/",
+    "image": "https://pbs.twimg.com/profile_images/1962378767612952576/BtofrDqF_200x200.jpg",
+    "email": "mailto:lucidbloks@gmail.com",
+    "sameAs": [
+      "https://x.com/aurora_ventures",
+      "https://x.com/kr8tivai",
+      "https://x.com/meetyourkin",
+      "https://linktr.ee/auroraventures",
+      "https://github.com/Matt-Aurora-Ventures",
+      "https://www.facebook.com/mattchaynes",
+      "https://www.linkedin.com/in/matthaynes88/",
+      "https://kr8tiv.ai/",
+      "https://kr8tiv.io/",
+      "https://jarvislife.io/",
+      "https://meetyourkin.com/"
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <style>
+    /* Critical fallback to keep first fold readable if external CSS is stale/blocked */
+    .hero {
+      position: relative;
+      min-height: min(100vh, 1100px);
+      display: grid;
+      align-items: end;
+      background: transparent;
+      overflow: hidden;
+    }
+
+    #hero-canvas {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 4;
+      padding-block: 8rem 4rem;
+      display: grid;
+      gap: 1.25rem;
+    }
+
+    .hero h1 {
+      margin: 0;
+      color: var(--text);
+      /* Dark text on bright background */
+      max-width: 13ch;
+    }
+
+    .hero-copy {
+      max-width: 860px;
+      color: var(--text-soft);
+    }
+  </style>
+  <link rel="stylesheet" href="/assets/css/base.css?v=20260225g" />
+  <link rel="stylesheet" href="/assets/css/about.css?v=20260225g" />
+</head>
+
+<body>
+  <canvas id="hero-canvas" aria-hidden="true"
+    style="position: fixed; inset: 0; z-index: -1; pointer-events: none; mix-blend-mode: screen; width: 100vw; height: 100vh;"></canvas>
+
+  <!-- Global Flora Layer (Breaks the Square) -->
+  <div id="global-flora">
+    <img src="/assets/media/flourish/monstera.png" class="parallax-flora flora-1" alt="" aria-hidden="true" />
+    <img src="/assets/media/flourish/palm.png" class="parallax-flora flora-2" alt="" aria-hidden="true" />
+    <img src="/assets/media/flourish/fern.png" class="parallax-flora flora-3" alt="" aria-hidden="true" />
+  </div>
+
+  <div id="global-cinematic-bg">
+    <div class="video-crossfade-container">
+      <!-- Base video runs 100% of the time beneath everything -->
+      <video class="global-video base-video active" src="./assets/media/hero-header.mp4" autoplay="autoplay" loop="loop"
+        muted="muted" playsinline="playsinline" preload="auto"></video>
+      <!-- New grok abstract video -->
+      <video class="global-video top-mid-video" src="./assets/media/grok-abstract.mp4" autoplay="autoplay" loop="loop"
+        muted="muted" playsinline="playsinline" preload="auto"></video>
+      <video class="global-video mid-video" src="./assets/media/story-mid.mp4" autoplay="autoplay" loop="loop"
+        muted="muted" playsinline="playsinline" preload="auto"></video>
+      <video class="global-video bottom-video" src="./assets/media/story-bottom.mp4" autoplay="autoplay" loop="loop"
+        muted="muted" playsinline="playsinline" preload="auto"></video>
+    </div>
+    <div class="global-overlay"></div>
+  </div>
+
+  <div class="page">
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <a class="brand" href="/"><span>Matt Haynes</span></a>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="/" class="accent">About</a>
+          <a href="#journey" data-track-nav>Story</a>
+          <a href="/links/">Links</a>
+          <a href="https://kr8tiv.ai/" target="_blank" rel="noopener noreferrer">KR8TiV AI</a>
+          <a href="https://kr8tiv.io/" target="_blank" rel="noopener noreferrer">KR8TiV Agency</a>
+          <a href="https://jarvislife.io/" target="_blank" rel="noopener noreferrer">Jarvis</a>
+          <a href="https://meetyourkin.com/" target="_blank" rel="noopener noreferrer">KIN</a>
+          <a href="https://calendly.com/kr8tiv" target="_blank" class="nav-cta">Book a meeting</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-offset">
+      <section class="hero" id="about-hero">
+
+        <div class="container hero-inner">
+          <span class="kicker"><span class="dot"></span>Founder mode: active</span>
+          <h1 class="split-target">Hi I'm Matt.<br />I build wild ideas into real systems.</h1>
+          <p class="lead hero-copy split-target">
+            Founder and operator of KR8TiV AI, KR8TiV Agency, and Aurora Ventures. Based in Costa Rica, building
+            globally.
+            I blend design, venture thinking, blockchain, AI automation, and operator discipline into products that
+            ship.
+            Unofficial tagline: I run companies kind of. Maybe they run me.
+          </p>
+          <div class="hero-meta">
+            <span>AI company + agency company</span>
+            <span>Designer + technologist</span>
+            <span>Public builder logs</span>
+          </div>
+          <div class="btn-row">
+            <a class="btn primary" href="/links/">Skip story - open links</a>
+            <a class="btn soft" href="#contact" data-track-nav>Hire me / book me</a>
+            <a class="btn ghost" href="https://linktr.ee/auroraventures" target="_blank" rel="noopener noreferrer">Open
+              Linktree</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="logo-rail-section">
+        <div class="container">
+          <p class="logo-rail-title display-accent">Active brands / products / labs</p>
+          <div class="logo-rail" aria-label="Brand rail">
+            <div class="logo-track">
+              <a class="logo-pill" href="https://kr8tiv.ai/" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/media/brands/kr8tiv-logo.png" alt="KR8TiV" /><span>KR8TiV AI</span>
+              </a>
+              <a class="logo-pill" href="https://kr8tiv.io/" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/media/brands/kr8tiv-logo.png" alt="KR8TiV Agency" /><span>KR8TiV Agency</span>
+              </a>
+              <a class="logo-pill" href="https://jarvislife.io/" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/media/brands/aurora-symbol.png" alt="Jarvis" /><span>Jarvis LifeOS</span>
+              </a>
+              <a class="logo-pill" href="https://meetyourkin.com/" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/media/brands/aurora-symbol.png" alt="MeetYourKIN" /><span>MeetYourKIN</span>
+              </a>
+              <a class="logo-pill" href="https://linktr.ee/auroraventures" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/media/brands/aurora-wordmark.png" alt="Aurora Ventures" /><span>Aurora Ventures</span>
+              </a>
+              <a class="logo-pill" href="https://aurah2o.net/" target="_blank" rel="noopener noreferrer">
+                <span>Aura H2O</span>
+              </a>
+              <a class="logo-pill" href="https://www.aurafarming.net/" target="_blank" rel="noopener noreferrer">
+                <span>Aura Farms</span>
+              </a>
+              <a class="logo-pill" href="https://x.com/aura_bnb" target="_blank" rel="noopener noreferrer">
+                <span>Aura BNB</span>
+              </a>
+            </div>
+
+            <!-- Duplicated track for Infinite GSAP looping -->
+            <div class="logo-track" aria-hidden="true">
+              <a class="logo-pill" href="https://kr8tiv.ai/" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/media/brands/kr8tiv-logo.png" alt="KR8TiV" /><span>KR8TiV AI</span>
+              </a>
+              <a class="logo-pill" href="https://kr8tiv.io/" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/media/brands/kr8tiv-logo.png" alt="KR8TiV Agency" /><span>KR8TiV Agency</span>
+              </a>
+              <a class="logo-pill" href="https://jarvislife.io/" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/media/brands/aurora-symbol.png" alt="Jarvis" /><span>Jarvis LifeOS</span>
+              </a>
+              <a class="logo-pill" href="https://meetyourkin.com/" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/media/brands/aurora-symbol.png" alt="MeetYourKIN" /><span>MeetYourKIN</span>
+              </a>
+              <a class="logo-pill" href="https://linktr.ee/auroraventures" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/media/brands/aurora-wordmark.png" alt="Aurora Ventures" /><span>Aurora Ventures</span>
+              </a>
+              <a class="logo-pill" href="https://aurah2o.net/" target="_blank" rel="noopener noreferrer">
+                <span>Aura H2O</span>
+              </a>
+              <a class="logo-pill" href="https://www.aurafarming.net/" target="_blank" rel="noopener noreferrer">
+                <span>Aura Farms</span>
+              </a>
+              <a class="logo-pill" href="https://x.com/aura_bnb" target="_blank" rel="noopener noreferrer">
+                <span>Aura BNB</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section maintainer-section">
+        <div class="container">
+          <div class="maintainer-card reveal">
+            <div class="maintainer-avatar-wrap">
+              <img src="https://pbs.twimg.com/profile_images/1962378767612952576/BtofrDqF_200x200.jpg"
+                alt="Matt Haynes profile image" class="maintainer-avatar"
+                onerror="this.src='https://avatars.githubusercontent.com/u/209257121?v=4';" />
+            </div>
+            <div class="maintainer-copy">
+              <p class="maintainer-label">Maintained by <strong>Matt Haynes</strong></p>
+              <p class="maintainer-subtitle">Aurora Ventures - KR8TiV AI - KR8TiV Agency - Jarvis LifeOS - MeetYourKIN
+              </p>
+              <div class="chip-row">
+                <a class="social-link" href="https://x.com/aurora_ventures" target="_blank"
+                  rel="noopener noreferrer"><svg class="social-icon fill" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M4 4h3.4l4.3 5.8L17.2 4H20l-7 7.9L20.4 20H17l-4.8-6.4L6.5 20H4l7.2-8.2z" />
+                  </svg><span>X: @aurora_ventures</span></a>
+                <a class="social-link" href="https://x.com/kr8tivai" target="_blank" rel="noopener noreferrer"><svg
+                    class="social-icon fill" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M4 4h3.4l4.3 5.8L17.2 4H20l-7 7.9L20.4 20H17l-4.8-6.4L6.5 20H4l7.2-8.2z" />
+                  </svg><span>X: @kr8tivai</span></a>
+                <a class="social-link" href="https://linktr.ee/auroraventures" target="_blank"
+                  rel="noopener noreferrer"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M10 13a5 5 0 0 0 7.54.54l2.92-2.92a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+                    <path d="M14 11a5 5 0 0 0-7.54-.54l-2.92 2.92a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+                  </svg><span>Linktree</span></a>
+                <a class="social-link" href="https://github.com/Matt-Aurora-Ventures" target="_blank"
+                  rel="noopener noreferrer"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m16 18 6-6-6-6" />
+                    <path d="m8 6-6 6 6 6" />
+                    <path d="m14.5 4-5 16" />
+                  </svg><span>GitHub</span></a>
+                <a class="social-link" href="https://www.linkedin.com/in/matthaynes88/" target="_blank"
+                  rel="noopener noreferrer"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 10v10" />
+                    <path d="M7 6v.01" />
+                    <path d="M12 20v-6" />
+                    <path d="M12 14a3 3 0 0 1 6 0v6" />
+                  </svg><span>LinkedIn</span></a>
+                <a class="social-link" href="https://www.facebook.com/mattchaynes" target="_blank"
+                  rel="noopener noreferrer"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M14 8h-2a2 2 0 0 0-2 2v3h4l-.6 3H10v6" />
+                    <path d="M14 8V5h3" />
+                  </svg><span>Facebook</span></a>
+                <a class="social-link" href="https://tiktok.com/@matt_haynes88" target="_blank"
+                  rel="noopener noreferrer"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M15 4v8a4 4 0 1 1-4-4" />
+                    <path d="M15 4a4 4 0 0 0 4 4" />
+                  </svg><span>TikTok</span></a>
+                <a class="social-link" href="https://api.whatsapp.com/send?phone=50686214954" target="_blank"
+                  rel="noopener noreferrer"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M20 12a8 8 0 0 1-11.8 7l-4.2 1 1-4.1A8 8 0 1 1 20 12Z" />
+                    <path d="M9.5 9.5c.4 1.8 1.7 3.2 3.5 3.8" />
+                  </svg><span>WhatsApp</span></a>
+                <a class="social-link" href="mailto:lucidbloks@gmail.com"><svg class="social-icon" viewBox="0 0 24 24"
+                    aria-hidden="true">
+                    <rect x="3" y="5" width="18" height="14" rx="2" />
+                    <path d="m3 7 9 6 9-6" />
+                  </svg><span>lucidbloks@gmail.com</span></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="notice-grid reveal">
+            <article class="notice-card">
+              <h3>Important</h3>
+              <p>
+                Many links in this ecosystem are saved in real time from my X feed and daily research flow.
+                They are not pre-vetted, not security-audited by default, and not endorsements.
+                Always evaluate and security-check before using anything.
+              </p>
+            </article>
+            <article class="notice-card">
+              <h3>Source note</h3>
+              <p>
+                Most references come from other builders and creators. I try to credit people, but attribution can be
+                incomplete.
+                This project is for personal organization first and public usefulness second.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section story-section" id="journey">
+        <div class="container story-grid">
+          <div class="story-portrait reveal">
+            <img src="/assets/media/matt-volcano.jpg" alt="Matt Haynes and dog at volcano"
+              style="object-fit:cover; border-radius:0; height:100%; aspect-ratio:4/5;" />
+          </div>
+          <div class="story-copy reveal">
+            <span class="kicker"><span class="dot"></span>The operator story</span>
+            <h2 class="split-target">Nerd-ninja Costa Rica mad scientist.<br />Staunch generalist. Serial shipper.</h2>
+            <p class="split-target">
+              I started in hands-on execution worlds, then moved across industries and geographies: construction roots,
+              startup systems,
+              blockchain cycles, regulated finance contexts, founder/operator roles, and now AI-native product
+              operations.
+            </p>
+            <p>
+              I moved from the great white north to Costa Rica and built a life around curiosity, high-output execution,
+              and unusual combinations:
+              fitness, biohacking, philosophy, simulation theory, psychology, quantum/theoretical science, product
+              design, growth, and deep technical systems.
+            </p>
+            <p>
+              I do consulting, speaking, interviews, and operator work for teams that value speed with accountability.
+              If the mission is real and the execution bar is high, I am interested.
+            </p>
+          </div>
+        </div>
+        <div class="container story-video-content reveal">
+          <span class="kicker"><span class="dot"></span>Operating style</span>
+          <h2 class="split-target">Move fast. Ship often.<br />Fix in public. Repeat.</h2>
+          <p class="split-target">
+            I share real build logs, wins, misses, and iteration loops. Less stealth-mode mythology, more durable
+            output.
+          </p>
+        </div>
+      </section>
+
+      <section class="section manifesto-section" id="manifesto">
+        <div class="container">
+          <div class="manifesto-wrap reveal">
+            <p class="manifesto-line">Curiosity over comfort.</p>
+            <p class="manifesto-line">Build in public over stealth mythology.</p>
+            <p class="manifesto-line">Execution over performative strategy decks.</p>
+            <p class="manifesto-line">Systems over heroics.</p>
+            <p class="manifesto-line">And yes, coffee over sleep (working on that).</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section operator-system-section" id="operator-system">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="kicker"><span class="dot"></span>Signal map</span>
+            <h2>One operator stack, many disciplines</h2>
+            <p>
+              This is the system view of how I work: design, ventures, AI infrastructure, and market execution wired
+              together
+              into one compounding loop. If WebGL gets blocked on your machine, this section still renders with a full
+              fallback.
+            </p>
+          </div>
+          <div class="operator-system-shell reveal" id="operator-shell">
+            <div class="operator-visual webgl-container" id="operator-visual">
+              <canvas id="operator-canvas"></canvas>
+            </div>
+            <div class="system-card-stack">
+              <article class="system-card active" data-stage="0">
+                <span class="stage-index">01</span>
+                <h3>Systems Designer</h3>
+                <p>I architect interface, narrative, and workflow as one product surface so teams move faster with less
+                  chaos.</p>
+              </article>
+              <article class="system-card" data-stage="1">
+                <span class="stage-index">02</span>
+                <h3>Venture Operator</h3>
+                <p>From fundraising cycles to early-stage execution, I run structure where ambiguity is high and
+                  timelines are short.</p>
+              </article>
+              <article class="system-card" data-stage="2">
+                <span class="stage-index">03</span>
+                <h3>AI + Automation Builder</h3>
+                <p>Agents, automation, and productized systems tuned for practical output, not vanity demos.</p>
+              </article>
+              <article class="system-card" data-stage="3">
+                <span class="stage-index">04</span>
+                <h3>Public Builder</h3>
+                <p>I publish process, experiments, and build logs in public, because momentum compounds faster than
+                  mystique.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="mid-video-text-overlay reveal">
+            <span class="kicker"><span class="dot"></span>Operating style</span>
+            <h2 class="split-target">Move fast. Ship often.<br />Fix in public. Repeat.</h2>
+            <p class="split-target">I share real build logs, wins, misses, and iteration loops. Less stealth-mode
+              mythology, more durable output.</p>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="section ventures-section">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="kicker"><span class="dot"></span>Operating companies</span>
+            <h2 class="split-target">AI company + agency company + venture layer</h2>
+            <p class="split-target">Clear split: KR8TiV IO is the marketing agency. KR8TiV AI is the AI and software
+              agency.</p>
+          </div>
+          <div class="grid cols-2 venture-grid">
+            <article class="card reveal">
+              <h3>KR8TiV AI</h3>
+              <p>AI and software agency building autonomous systems, mission-control infrastructure, and execution
+                tooling.</p>
+              <div class="btn-row">
+                <a class="btn ghost" href="https://kr8tiv.ai/" target="_blank" rel="noopener noreferrer">Website</a>
+                <a class="btn ghost" href="https://github.com/kr8tiv-ai" target="_blank"
+                  rel="noopener noreferrer">GitHub</a>
+              </div>
+            </article>
+            <article class="card reveal">
+              <h3>KR8TiV Agency</h3>
+              <p>Marketing agency focused on brand strategy, growth systems, GTM execution, and founder positioning.</p>
+              <div class="btn-row">
+                <a class="btn ghost" href="https://kr8tiv.io/" target="_blank" rel="noopener noreferrer">Website</a>
+                <a class="btn ghost" href="https://github.com/kr8tiv-io" target="_blank"
+                  rel="noopener noreferrer">GitHub</a>
+              </div>
+            </article>
+            <article class="card reveal">
+              <h3>Jarvis LifeOS</h3>
+              <p>Trading and life-operations stack built for signal + execution, not wrapper theater.</p>
+              <div class="btn-row">
+                <a class="btn ghost" href="https://jarvislife.io/" target="_blank" rel="noopener noreferrer">Website</a>
+                <a class="btn ghost" href="https://github.com/Matt-Aurora-Ventures/Jarvis" target="_blank"
+                  rel="noopener noreferrer">Core repo</a>
+              </div>
+            </article>
+            <article class="card reveal">
+              <h3>MeetYourKIN</h3>
+              <p>Relationship intelligence product focused on emotional context, communication clarity, and conflict
+                navigation.</p>
+              <div class="btn-row">
+                <a class="btn ghost" href="https://meetyourkin.com/" target="_blank"
+                  rel="noopener noreferrer">Website</a>
+                <a class="btn ghost" href="https://x.com/meetyourkin" target="_blank" rel="noopener noreferrer">X
+                  account</a>
+              </div>
+            </article>
+            <article class="card reveal">
+              <h3>Aurora Ventures</h3>
+              <p>Strategy and venture studio layer for capital, partnerships, and operator-level incubation.</p>
+              <div class="btn-row">
+                <a class="btn ghost" href="https://www.auroraventures.agency" target="_blank"
+                  rel="noopener noreferrer">Website</a>
+                <a class="btn ghost" href="https://github.com/kr8tiv-io/Aurora-Ventures-Website" target="_blank"
+                  rel="noopener noreferrer">Website repo</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section github-section">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="kicker"><span class="dot"></span>Active GitHub development</span>
+            <h2>What is shipping now (not old archive stuff)</h2>
+            <p>Mapped by company so people can track current build activity and intent. Personal page repo structure is
+              being consolidated under KR8TiV IO for now.</p>
+          </div>
+          <div class="grid cols-3 repo-grid">
+            <article class="card reveal repo-card">
+              <p class="repo-tag">KR8TiV Agency / Personal HQ</p>
+              <h3>kr8tiv-io / matthaynes.fun (overarching personal page)</h3>
+              <p>This overarching personal site is currently being housed under the KR8TiV IO umbrella while final repo
+                structure is standardized.</p>
+              <a class="btn ghost" href="https://github.com/kr8tiv-io" target="_blank" rel="noopener noreferrer">Open
+                org</a>
+            </article>
+            <article class="card reveal repo-card">
+              <p class="repo-tag">KR8TiV AI</p>
+              <h3>kr8tiv-ai / kr8tiv-mission-control</h3>
+              <p>Mission control core for automation + operator workflows across the KR8TiV ecosystem.</p>
+              <a class="btn ghost" href="https://github.com/kr8tiv-ai/kr8tiv-mission-control" target="_blank"
+                rel="noopener noreferrer">Open repo</a>
+            </article>
+            <article class="card reveal repo-card">
+              <p class="repo-tag">KR8TiV AI</p>
+              <h3>kr8tiv-ai / kr8tiv-team-execution-resilience</h3>
+              <p>Team process resilience and execution discipline systems for live operator environments.</p>
+              <a class="btn ghost" href="https://github.com/kr8tiv-ai/kr8tiv-team-execution-resilience" target="_blank"
+                rel="noopener noreferrer">Open repo</a>
+            </article>
+            <article class="card reveal repo-card">
+              <p class="repo-tag">Personal / Jarvis</p>
+              <h3>Matt-Aurora-Ventures / Jarvis</h3>
+              <p>Core repo for the Jarvis stack and adjacent execution tooling under active iteration.</p>
+              <a class="btn ghost" href="https://github.com/Matt-Aurora-Ventures/Jarvis" target="_blank"
+                rel="noopener noreferrer">Open repo</a>
+            </article>
+            <article class="card reveal repo-card">
+              <p class="repo-tag">KR8TiV Agency</p>
+              <h3>kr8tiv-io / kr8tiv-website</h3>
+              <p>Agency web presence and positioning layer for growth + execution services.</p>
+              <a class="btn ghost" href="https://github.com/kr8tiv-io/kr8tiv-website" target="_blank"
+                rel="noopener noreferrer">Open repo</a>
+            </article>
+            <article class="card reveal repo-card">
+              <p class="repo-tag">KR8TiV Agency</p>
+              <h3>kr8tiv-io / kr8tiv-ai-website</h3>
+              <p>Frontend and messaging buildout for the AI company branch website.</p>
+              <a class="btn ghost" href="https://github.com/kr8tiv-io/kr8tiv-ai-website" target="_blank"
+                rel="noopener noreferrer">Open repo</a>
+            </article>
+            <article class="card reveal repo-card">
+              <p class="repo-tag">Aurora Ventures</p>
+              <h3>kr8tiv-io / Aurora-Ventures-Website</h3>
+              <p>The Aurora Ventures site currently being finished after this project rollout.</p>
+              <a class="btn ghost" href="https://github.com/kr8tiv-io/Aurora-Ventures-Website" target="_blank"
+                rel="noopener noreferrer">Open repo</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="mid-video-band" style="display:none;"></section>
+
+      <section class="section aura-projects-section">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="kicker"><span class="dot"></span>Back-burner, still real</span>
+            <h2>Aura initiatives: water, food, and unique stays</h2>
+            <p>
+              These are paused for now but part of the story and open to aligned sponsors or seed partners.
+              Free water and food systems are still core values in the long arc.
+            </p>
+          </div>
+          <div class="grid cols-3 aura-grid">
+            <article class="card reveal aura-card">
+              <img src="/assets/media/projects/aurah2o.jpg" alt="Aura H2O" />
+              <h3>Aura H2O</h3>
+              <p>Clean water initiative with public docs and community-oriented intent.</p>
+              <div class="btn-row">
+                <a class="btn ghost" href="https://aurah2o.net/" target="_blank" rel="noopener noreferrer">Website</a>
+                <a class="btn ghost" href="https://x.com/aura_h2o" target="_blank" rel="noopener noreferrer">X</a>
+                <a class="btn ghost" href="https://aurabnb.gitbook.io/aurah2o" target="_blank"
+                  rel="noopener noreferrer">Docs</a>
+              </div>
+            </article>
+            <article class="card reveal aura-card">
+              <img src="/assets/media/projects/aurafarms.jpg" alt="Aura Farms" />
+              <h3>Aura Farms</h3>
+              <p>Food and agriculture direction focused on resilient local production models.</p>
+              <div class="btn-row">
+                <a class="btn ghost" href="https://www.aurafarming.net/" target="_blank"
+                  rel="noopener noreferrer">Website</a>
+                <a class="btn ghost" href="https://x.com/aura_farms" target="_blank" rel="noopener noreferrer">X</a>
+                <a class="btn ghost" href="https://aurabnb.gitbook.io/aurafarms" target="_blank"
+                  rel="noopener noreferrer">Docs</a>
+              </div>
+            </article>
+            <article class="card reveal aura-card">
+              <img src="/assets/media/projects/aurabnb.jpg" alt="Aura BnB" />
+              <h3>Aura BnB</h3>
+              <p>Unique-stay concept currently on hold, open to seed-aligned collaboration.</p>
+              <div class="btn-row">
+                <a class="btn ghost" href="https://x.com/aura_bnb" target="_blank" rel="noopener noreferrer">X</a>
+                <a class="btn ghost" href="https://aurabnb.gitbook.io/aurabnb" target="_blank"
+                  rel="noopener noreferrer">Docs</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section timeline-section" id="journey">
+
+        <!-- Tropical Flora Parallax Element -->
+        <img src="/assets/media/flourish/palm.png" class="parallax-flora flora-4" alt="" aria-hidden="true" />
+        <img src="/assets/media/flourish/monstera.png" class="parallax-flora flora-5" alt="" aria-hidden="true" />
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="kicker"><span class="dot"></span>Journey map</span>
+            <h2>A nonlinear career that compounds</h2>
+            <p>
+              Construction to startups. Founder to consultant. Blockchain to regulated finance to AI systems.
+              The through-line is curiosity plus execution.
+            </p>
+          </div>
+          <div class="timeline-grid">
+            <article class="timeline-item reveal">
+              <h3>Builder roots</h3>
+              <p>Learned by doing. Ground-level execution first, strategy second.</p>
+            </article>
+            <article class="timeline-item reveal">
+              <h3>Blockchain cycles</h3>
+              <p>Multi-time founder experience in volatile markets.</p>
+            </article>
+            <article class="timeline-item reveal">
+              <h3>Venture + consulting</h3>
+              <p>Supported startup ecosystems, regulated environments, and growth execution for early-stage teams.</p>
+            </article>
+            <article class="timeline-item reveal">
+              <h3>AI-native operations</h3>
+              <p>Now focused on autonomous AI, life/trading OS products, and compounding execution systems.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section capability-section">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="kicker"><span class="dot"></span>What I do</span>
+            <h2>Consulting, systems, and public-facing founder execution</h2>
+            <p>If you need someone who can think strategically and execute technically, this is where I fit.</p>
+          </div>
+          <div class="grid cols-3 capability-grid">
+            <article class="card reveal">
+              <h3>KR8TiV IO (Marketing Agency)</h3>
+              <p>Positioning architecture, founder storytelling, and marketing systems that support distribution and
+                conversion.</p>
+            </article>
+            <article class="card reveal">
+              <h3>KR8TiV AI (AI + Software Agency)</h3>
+              <p>Workflow design, tooling integration, and autonomous agent architecture from prototype through
+                deployment.</p>
+            </article>
+            <article class="card reveal">
+              <h3>Growth + launch execution</h3>
+              <p>Ship cadence, GTM workflow, experimentation loops, and execution controls for high-speed teams.</p>
+            </article>
+          </div>
+
+          <div class="bottom-video-text-overlay reveal" style="margin-top: 5rem;">
+            <span class="kicker"><span class="dot"></span>Open opportunities</span>
+            <h2>Build with me,<br />or hand me a hard problem.</h2>
+            <p>Consulting, speaking, founder support, and system-level execution are open. If your team ships and your
+              standards are high, we should talk.</p>
+            <div class="btn-row" style="margin-top:2rem;">
+              <a class="btn primary" href="#contact" data-track-nav>Start a conversation</a>
+              <a class="btn ghost" href="/links/">Open full links library</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="video-story-band reveal" id="bottom-video-band" style="display:none;"></section>
+
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="kicker"><span class="dot"></span>Contact</span>
+            <h2>Consulting, partnerships, interviews, speaking</h2>
+            <p>
+              Clear asks get faster responses. If you need founder/operator execution with technical depth, send the
+              brief.
+            </p>
+          </div>
+
+          <div class="booking-card reveal">
+            <h3>Book a meeting</h3>
+            <p>
+              Preferred route is calendar booking. If the calendar URL is being updated, use Linktree or email and I
+              will route it manually.
+            </p>
+            <div class="btn-row">
+              <a id="book-call-link" class="btn primary" href="https://cal.com/aurora-ventures" target="_blank"
+                rel="noopener noreferrer">Book via Cal</a>
+              <a class="btn ghost" href="https://linktr.ee/auroraventures" target="_blank"
+                rel="noopener noreferrer">Alt: Linktree intake</a>
+            </div>
+            <p class="booking-note">If this button misses, blame founder-hours and send me the link I should be using.
+            </p>
+          </div>
+
+          <div class="contact-wrap reveal">
+            <form id="contact-form" novalidate>
+              <div class="contact-grid">
+                <div class="field">
+                  <label for="name">Name *</label>
+                  <input id="name" name="name" type="text" required />
+                </div>
+                <div class="field">
+                  <label for="email">Email *</label>
+                  <input id="email" name="email" type="email" required />
+                </div>
+                <div class="field full">
+                  <label for="company">Company / project</label>
+                  <input id="company" name="company" type="text" />
+                </div>
+                <div class="field full">
+                  <label for="need">What do you need?</label>
+                  <select id="need" name="need">
+                    <option value="">Select one</option>
+                    <option>Consulting</option>
+                    <option>Speaking / interview</option>
+                    <option>AI automation buildout</option>
+                    <option>Brand strategy / agency engagement</option>
+                    <option>Partnership / sponsor discussion</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="field full">
+                  <label for="message">Message *</label>
+                  <textarea id="message" name="message" required></textarea>
+                </div>
+                <div class="hidden-honeypot" aria-hidden="true">
+                  <label for="website">Website</label>
+                  <input id="website" name="website" type="text" autocomplete="off" tabindex="-1" />
+                </div>
+              </div>
+              <div class="btn-row" style="margin-top:1rem;">
+                <button class="btn primary" type="submit">Send message</button>
+                <a class="btn ghost" href="mailto:lucidbloks@gmail.com">Email directly</a>
+              </div>
+              <p class="form-state" id="form-status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="btn-row">
+          <a class="btn ghost social-link" href="https://x.com/aurora_ventures" target="_blank"
+            rel="noopener noreferrer"><svg class="social-icon fill" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 4h3.4l4.3 5.8L17.2 4H20l-7 7.9L20.4 20H17l-4.8-6.4L6.5 20H4l7.2-8.2z" />
+            </svg><span>X</span></a>
+          <a class="btn ghost social-link" href="https://linktr.ee/auroraventures" target="_blank"
+            rel="noopener noreferrer"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M10 13a5 5 0 0 0 7.54.54l2.92-2.92a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+              <path d="M14 11a5 5 0 0 0-7.54-.54l-2.92 2.92a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+            </svg><span>Linktree</span></a>
+          <a class="btn ghost social-link" href="https://github.com/Matt-Aurora-Ventures" target="_blank"
+            rel="noopener noreferrer"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m16 18 6-6-6-6" />
+              <path d="m8 6-6 6 6 6" />
+              <path d="m14.5 4-5 16" />
+            </svg><span>GitHub</span></a>
+          <a class="btn ghost social-link" href="https://github.com/kr8tiv-ai" target="_blank"
+            rel="noopener noreferrer"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m16 18 6-6-6-6" />
+              <path d="m8 6-6 6 6 6" />
+              <path d="m14.5 4-5 16" />
+            </svg><span>KR8TiV AI GitHub</span></a>
+          <a class="btn ghost social-link" href="https://github.com/kr8tiv-io" target="_blank"
+            rel="noopener noreferrer"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m16 18 6-6-6-6" />
+              <path d="m8 6-6 6 6 6" />
+              <path d="m14.5 4-5 16" />
+            </svg><span>KR8TiV Agency GitHub</span></a>
+        </div>
+        <small>
+          Public builder library maintained by Matt Haynes. Verify links and tools independently before use.
+        </small>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    window.MATT_BOOKING_URL = "https://cal.com/aurora-ventures";
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="/assets/js/base.js?v=20260225g"></script>
+  <script src="/assets/js/about-motion.js?v=20260225g"></script>
+</body>
+
+</html>
