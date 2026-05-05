@@ -1,0 +1,13 @@
+---
+import { chapters } from '../data/site';
+---
+
+<nav class="runway-nav" aria-label="Section navigation">
+  {chapters.map((chapter) => (
+    <a href={`#${chapter.id}`} data-runway-link={chapter.id}>
+      <span>{chapter.number}</span>
+      <strong>{chapter.label}</strong>
+    </a>
+  ))}
+</nav>
+

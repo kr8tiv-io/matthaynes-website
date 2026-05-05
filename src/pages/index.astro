@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ContactAtelier from '../components/ContactAtelier.astro';
+import HeroRitual from '../components/HeroRitual.astro';
+import ManifestoChapter from '../components/ManifestoChapter.astro';
+import ReducedMotionFallback from '../components/ReducedMotionFallback.astro';
+import RunwayNav from '../components/RunwayNav.astro';
+import ShaderLens from '../components/ShaderLens.astro';
+import SystemsMap from '../components/SystemsMap.astro';
+import VentureIndex from '../components/VentureIndex.astro';
+---
+
+<BaseLayout>
+  <RunwayNav />
+  <ShaderLens />
+  <HeroRitual />
+  <ManifestoChapter />
+  <SystemsMap />
+  <VentureIndex />
+  <section class="library-preview chapter-section" id="links-preview" data-video-scene="manifesto">
+    <div class="chapter-label">
+      <span>05</span>
+      <strong>Library</strong>
+    </div>
+    <div>
+      <p class="eyebrow">Links intelligence</p>
+      <h2 data-split>A big basket of future-reference links.</h2>
+      <p>
+        Tools, research scraps, security references, trading notes, founder infrastructure, dev resources, and internet oddities collected in motion. Useful now, useful later, never pretending to be a portfolio.
+      </p>
+      <a class="action-primary" href="/links/">Open links console</a>
+    </div>
+  </section>
+  <ContactAtelier />
+  <ReducedMotionFallback />
+</BaseLayout>

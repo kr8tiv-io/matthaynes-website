@@ -1,0 +1,112 @@
+<canvas class="shader-lens" data-shader-lens aria-hidden="true"></canvas>
+
+<script>
+  const canvas = document.querySelector('[data-shader-lens]');
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  const startShaderLens = async () => {
+    if (!(canvas instanceof HTMLCanvasElement)) return;
+
+    const THREE = await import('three');
+    const renderer = new THREE.WebGLRenderer({
+      canvas,
+      alpha: true,
+      antialias: true,
+      powerPreference: 'high-performance'
+    });
+    const scene = new THREE.Scene();
+    const camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
+    const geometry = new THREE.PlaneGeometry(2, 2);
+    const uniforms = {
+      uTime: { value: 0 },
+      uResolution: { value: new THREE.Vector2(1, 1) },
+      uPointer: { value: new THREE.Vector2(0.5, 0.5) },
+      uScroll: { value: 0 }
+    };
+
+    const material = new THREE.ShaderMaterial({
+      transparent: true,
+      depthWrite: false,
+      uniforms,
+      vertexShader: `
+        varying vec2 vUv;
+        void main() {
+          vUv = uv;
+          gl_Position = vec4(position, 1.0);
+        }
+      `,
+      fragmentShader: `
+        precision highp float;
+        varying vec2 vUv;
+        uniform float uTime;
+        uniform float uScroll;
+        uniform vec2 uResolution;
+        uniform vec2 uPointer;
+
+        float line(vec2 uv, float y, float width) {
+          return 1.0 - smoothstep(0.0, width, abs(uv.y - y));
+        }
+
+        float ring(vec2 uv, vec2 center, float radius, float width) {
+          float d = abs(distance(uv, center) - radius);
+          return 1.0 - smoothstep(0.0, width, d);
+        }
+
+        void main() {
+          vec2 uv = vUv;
+          vec2 centered = uv - vec2(0.5);
+          centered.x *= uResolution.x / max(uResolution.y, 1.0);
+          float sweep = sin((uv.y + uScroll * 0.32) * 10.0 + uTime * 0.55) * 0.5 + 0.5;
+          float blade = line(uv, 0.18 + sweep * 0.62, 0.006);
+          float lens = ring(uv, uPointer, 0.16 + sin(uTime * 0.7) * 0.018, 0.012);
+          float diagonal = 1.0 - smoothstep(0.0, 0.014, abs(centered.y + centered.x * 0.42));
+          vec3 cyan = vec3(0.32, 0.95, 0.91);
+          vec3 gold = vec3(0.95, 0.74, 0.39);
+          vec3 color = mix(cyan, gold, smoothstep(0.2, 0.9, uv.y));
+          float alpha = blade * 0.09 + lens * 0.18 + diagonal * 0.075;
+          gl_FragColor = vec4(color, alpha);
+        }
+      `
+    });
+
+    scene.add(new THREE.Mesh(geometry, material));
+    let frame = 0;
+    let previous = performance.now();
+
+    function resize() {
+      const width = window.innerWidth;
+      const height = window.innerHeight;
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.5));
+      renderer.setSize(width, height, false);
+      uniforms.uResolution.value.set(width, height);
+    }
+
+    function render() {
+      const now = performance.now();
+      uniforms.uTime.value += (now - previous) / 1000;
+      previous = now;
+      uniforms.uScroll.value = window.scrollY / Math.max(document.body.scrollHeight - window.innerHeight, 1);
+      renderer.render(scene, camera);
+      frame = requestAnimationFrame(render);
+    }
+
+    window.addEventListener('resize', resize, { passive: true });
+    window.addEventListener('pointermove', (event) => {
+      uniforms.uPointer.value.set(event.clientX / window.innerWidth, 1 - event.clientY / window.innerHeight);
+    }, { passive: true });
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) cancelAnimationFrame(frame);
+      else render();
+    });
+    resize();
+    render();
+  };
+
+  if (canvas instanceof HTMLCanvasElement && !prefersReduced) {
+    if ('requestIdleCallback' in window) {
+      window.requestIdleCallback(() => void startShaderLens(), { timeout: 1400 });
+    } else {
+      globalThis.setTimeout(() => void startShaderLens(), 500);
+    }
+  }
+</script>

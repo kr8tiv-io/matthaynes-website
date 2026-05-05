@@ -1,591 +1,1922 @@
 {
-    "items": [
-        {
-            "title": "KR8TiV AI",
-            "description": "AI and software agency building autonomous systems, mission-control infrastructure, and execution tooling.",
-            "url": "https://kr8tiv.ai/",
-            "category": "Core Projects",
-            "subcategory": "KR8TiV",
-            "author": "Matt Haynes",
-            "tags": [
-                "AI",
-                "Agency",
-                "Automation",
-                "Software"
-            ]
-        },
-        {
-            "title": "KR8TiV Agency (IO)",
-            "description": "Marketing agency focused on brand strategy, growth systems, GTM execution, and founder positioning.",
-            "url": "https://kr8tiv.io/",
-            "category": "Core Projects",
-            "subcategory": "KR8TiV",
-            "author": "Matt Haynes",
-            "tags": [
-                "Marketing",
-                "Agency",
-                "Growth",
-                "Branding"
-            ]
-        },
-        {
-            "title": "Jarvis LifeOS",
-            "description": "Trading and life-operations stack built for signal + execution. The core Jarvis system repository.",
-            "url": "https://jarvislife.io/",
-            "category": "Core Projects",
-            "subcategory": "Jarvis",
-            "author": "Matt Haynes",
-            "tags": [
-                "Trading",
-                "LifeOS",
-                "Automation",
-                "Python"
-            ]
-        },
-        {
-            "title": "MeetYourKIN",
-            "description": "Relationship intelligence product focused on emotional context, communication clarity, and conflict navigation.",
-            "url": "https://meetyourkin.com/",
-            "category": "Core Projects",
-            "subcategory": "KIN",
-            "author": "Matt Haynes",
-            "tags": [
-                "Relationships",
-                "AI",
-                "Product",
-                "Psychology"
-            ]
-        },
-        {
-            "title": "Aurora Ventures Linktree",
-            "description": "Strategy and venture studio layer for capital, partnerships, and operator-level incubation.",
-            "url": "https://linktr.ee/auroraventures",
-            "category": "Core Projects",
-            "subcategory": "Aurora",
-            "author": "Matt Haynes",
-            "tags": [
-                "Ventures",
-                "Capital",
-                "Incubation"
-            ]
-        },
-        {
-            "title": "Aura H2O",
-            "description": "Clean water initiative with public docs and community-oriented intent. Paused but part of the story.",
-            "url": "https://aurah2o.net/",
-            "category": "Ecosystem Projects",
-            "subcategory": "Aura",
-            "author": "Matt Haynes",
-            "tags": [
-                "Water",
-                "Social Impact",
-                "Community"
-            ]
-        },
-        {
-            "title": "Aura Farms",
-            "description": "Food and agriculture direction focused on resilient local production models.",
-            "url": "https://www.aurafarming.net/",
-            "category": "Ecosystem Projects",
-            "subcategory": "Aura",
-            "author": "Matt Haynes",
-            "tags": [
-                "Agriculture",
-                "Sustainability",
-                "Food"
-            ]
-        },
-        {
-            "title": "Aura BnB",
-            "description": "Unique-stay concept currently on hold, open to seed-aligned collaboration.",
-            "url": "https://x.com/aura_bnb",
-            "category": "Ecosystem Projects",
-            "subcategory": "Aura",
-            "author": "Matt Haynes",
-            "tags": [
-                "Hospitality",
-                "Stays",
-                "Costa Rica"
-            ]
-        },
-        {
-            "title": "Cursor AI",
-            "description": "AI-first code editor with deep LLM integration. Fast, intelligent autocomplete and codebase-aware chat.",
-            "url": "https://cursor.sh/",
-            "category": "AI Tools",
-            "subcategory": "Dev Tools",
-            "author": "Cursor",
-            "tags": [
-                "IDE",
-                "AI Coding",
-                "Autocomplete",
-                "LLM"
-            ]
-        },
-        {
-            "title": "Claude by Anthropic",
-            "description": "Large language model with extended context windows and strong reasoning. Used heavily for code and analysis.",
-            "url": "https://claude.ai/",
-            "category": "AI Tools",
-            "subcategory": "LLM",
-            "author": "Anthropic",
-            "tags": [
-                "LLM",
-                "Reasoning",
-                "API",
-                "Code"
-            ]
-        },
-        {
-            "title": "OpenAI Platform",
-            "description": "GPT models, API access, assistants, and multimodal capabilities for AI-native products.",
-            "url": "https://platform.openai.com/",
-            "category": "AI Tools",
-            "subcategory": "LLM",
-            "author": "OpenAI",
-            "tags": [
-                "GPT",
-                "API",
-                "Assistants",
-                "LLM"
-            ]
-        },
-        {
-            "title": "Perplexity AI",
-            "description": "AI-powered answer engine with real-time web search and citation. Good for rapid research validation.",
-            "url": "https://perplexity.ai/",
-            "category": "AI Tools",
-            "subcategory": "Search",
-            "author": "Perplexity",
-            "tags": [
-                "Search",
-                "Research",
-                "Citations",
-                "AI"
-            ]
-        },
-        {
-            "title": "LangChain",
-            "description": "Framework for developing applications powered by language models. Chains, agents, and retrieval patterns.",
-            "url": "https://www.langchain.com/",
-            "category": "AI Tools",
-            "subcategory": "Frameworks",
-            "author": "LangChain",
-            "tags": [
-                "Framework",
-                "Agents",
-                "RAG",
-                "LLM"
-            ]
-        },
-        {
-            "title": "CrewAI",
-            "description": "Multi-agent orchestration framework for role-based AI teams that collaborate on complex tasks.",
-            "url": "https://www.crewai.com/",
-            "category": "AI Tools",
-            "subcategory": "Agents",
-            "author": "CrewAI",
-            "tags": [
-                "Multi-Agent",
-                "Orchestration",
-                "Automation"
-            ]
-        },
-        {
-            "title": "Hugging Face",
-            "description": "Open-source ML model hub. Models, datasets, spaces, and inference APIs for every modality.",
-            "url": "https://huggingface.co/",
-            "category": "AI Tools",
-            "subcategory": "Models",
-            "author": "Hugging Face",
-            "tags": [
-                "Models",
-                "Open Source",
-                "ML",
-                "Datasets"
-            ]
-        },
-        {
-            "title": "Shodan",
-            "description": "Search engine for internet-connected devices. Essential for attack surface mapping and reconnaissance.",
-            "url": "https://shodan.io/",
-            "category": "Security & OSINT",
-            "subcategory": "Recon",
-            "author": "Shodan",
-            "tags": [
-                "OSINT",
-                "Recon",
-                "IoT",
-                "Scanner"
-            ]
-        },
-        {
-            "title": "OWASP Top 10",
-            "description": "The standard awareness document for web application security. Critical reading for any builder.",
-            "url": "https://owasp.org/www-project-top-ten/",
-            "category": "Security & OSINT",
-            "subcategory": "Standards",
-            "author": "OWASP",
-            "tags": [
-                "Web Security",
-                "Standards",
-                "Vulnerabilities"
-            ]
-        },
-        {
-            "title": "Have I Been Pwned",
-            "description": "Check if your email or phone has been compromised in a data breach. Essential operational hygiene.",
-            "url": "https://haveibeenpwned.com/",
-            "category": "Security & OSINT",
-            "subcategory": "Personal Security",
-            "author": "Troy Hunt",
-            "tags": [
-                "Breach Check",
-                "Privacy",
-                "Email"
-            ]
-        },
-        {
-            "title": "VirusTotal",
-            "description": "Multi-engine file and URL scanner. Quick validation before clicking anything sketchy.",
-            "url": "https://www.virustotal.com/",
-            "category": "Security & OSINT",
-            "subcategory": "Scanning",
-            "author": "Google",
-            "tags": [
-                "Malware",
-                "Scanner",
-                "URLs",
-                "Files"
-            ]
-        },
-        {
-            "title": "The Hacker News",
-            "description": "Cybersecurity news and analysis. Daily reading for staying ahead of emerging threats.",
-            "url": "https://thehackernews.com/",
-            "category": "Security & OSINT",
-            "subcategory": "News",
-            "author": "THN",
-            "tags": [
-                "News",
-                "Cybersecurity",
-                "Threats"
-            ]
-        },
-        {
-            "title": "TradingView",
-            "description": "Charting platform for crypto, stocks, and forex. Pine Script for custom indicators and strategy backtesting.",
-            "url": "https://tradingview.com/",
-            "category": "Trading Systems",
-            "subcategory": "Charting",
-            "author": "TradingView",
-            "tags": [
-                "Charts",
-                "Pine Script",
-                "Crypto",
-                "Stocks"
-            ]
-        },
-        {
-            "title": "Jupiter Exchange",
-            "description": "Solana DEX aggregator. Core swap infrastructure for the Jarvis trading stack.",
-            "url": "https://jup.ag/",
-            "category": "Trading Systems",
-            "subcategory": "DEX",
-            "author": "Jupiter",
-            "tags": [
-                "Solana",
-                "DEX",
-                "Swap",
-                "DeFi"
-            ]
-        },
-        {
-            "title": "Dexscreener",
-            "description": "Real-time token charts and pair discovery across Solana, Ethereum, and other chains.",
-            "url": "https://dexscreener.com/",
-            "category": "Trading Systems",
-            "subcategory": "Analytics",
-            "author": "Dexscreener",
-            "tags": [
-                "Charts",
-                "Token Discovery",
-                "DeFi"
-            ]
-        },
-        {
-            "title": "Birdeye",
-            "description": "Solana-focused DeFi analytics with wallet tracking, token overview, and real-time price feeds.",
-            "url": "https://birdeye.so/",
-            "category": "Trading Systems",
-            "subcategory": "Analytics",
-            "author": "Birdeye",
-            "tags": [
-                "Solana",
-                "Analytics",
-                "Wallet",
-                "DeFi"
-            ]
-        },
-        {
-            "title": "CoinGecko",
-            "description": "Comprehensive crypto data aggregator. Market caps, volumes, and fundamental metrics across chains.",
-            "url": "https://www.coingecko.com/",
-            "category": "Trading Systems",
-            "subcategory": "Data",
-            "author": "CoinGecko",
-            "tags": [
-                "Crypto",
-                "Market Data",
-                "Pricing"
-            ]
-        },
-        {
-            "title": "Notion",
-            "description": "Connected workspace for docs, projects, and wikis. Core operational backbone for team knowledge.",
-            "url": "https://notion.so/",
-            "category": "Founder Operations",
-            "subcategory": "Productivity",
-            "author": "Notion",
-            "tags": [
-                "Docs",
-                "Project Management",
-                "Wiki"
-            ]
-        },
-        {
-            "title": "Linear",
-            "description": "Issue tracking and project management built for speed. Keyboard-first, clean, and opinionated.",
-            "url": "https://linear.app/",
-            "category": "Founder Operations",
-            "subcategory": "Project Management",
-            "author": "Linear",
-            "tags": [
-                "Issues",
-                "Sprints",
-                "Engineering"
-            ]
-        },
-        {
-            "title": "Cal.com",
-            "description": "Open-source scheduling infrastructure. Used for booking calls and meeting coordination.",
-            "url": "https://cal.com/",
-            "category": "Founder Operations",
-            "subcategory": "Scheduling",
-            "author": "Cal.com",
-            "tags": [
-                "Calendar",
-                "Booking",
-                "Open Source"
-            ]
-        },
-        {
-            "title": "Vercel",
-            "description": "Frontend cloud platform. Deploy Next.js and static sites with zero-config CI/CD.",
-            "url": "https://vercel.com/",
-            "category": "Founder Operations",
-            "subcategory": "Deployment",
-            "author": "Vercel",
-            "tags": [
-                "Hosting",
-                "CI/CD",
-                "Next.js",
-                "Edge"
-            ]
-        },
-        {
-            "title": "GitHub",
-            "description": "Version control and collaboration platform. All active repos live here across KR8TiV and Aurora orgs.",
-            "url": "https://github.com/",
-            "category": "Founder Operations",
-            "subcategory": "Dev Tools",
-            "author": "GitHub",
-            "tags": [
-                "Git",
-                "Repos",
-                "Collaboration",
-                "CI"
-            ]
-        },
-        {
-            "title": "Stripe",
-            "description": "Payment infrastructure for the internet. Handles billing, subscriptions, and financial tooling.",
-            "url": "https://stripe.com/",
-            "category": "Founder Operations",
-            "subcategory": "Payments",
-            "author": "Stripe",
-            "tags": [
-                "Payments",
-                "Billing",
-                "SaaS",
-                "API"
-            ]
-        },
-        {
-            "title": "Solana",
-            "description": "High-performance blockchain for DeFi and consumer applications. Core chain for Jarvis trading stack.",
-            "url": "https://solana.com/",
-            "category": "Blockchain",
-            "subcategory": "L1",
-            "author": "Solana Foundation",
-            "tags": [
-                "L1",
-                "DeFi",
-                "Speed",
-                "Solana"
-            ]
-        },
-        {
-            "title": "Ethereum",
-            "description": "Smart contract platform and the anchor chain for DeFi, NFTs, and EVM-compatible protocols.",
-            "url": "https://ethereum.org/",
-            "category": "Blockchain",
-            "subcategory": "L1",
-            "author": "Ethereum Foundation",
-            "tags": [
-                "L1",
-                "Smart Contracts",
-                "EVM",
-                "DeFi"
-            ]
-        },
-        {
-            "title": "Alvara Protocol",
-            "description": "ERC-7621 basket token standard for on-chain fund management and basket investing.",
-            "url": "https://alvara.xyz/",
-            "category": "Blockchain",
-            "subcategory": "DeFi Protocol",
-            "author": "Alvara",
-            "tags": [
-                "ERC-7621",
-                "Baskets",
-                "DeFi",
-                "Fund Management"
-            ]
-        },
-        {
-            "title": "Phantom Wallet",
-            "description": "Multi-chain crypto wallet for Solana, Ethereum, and Polygon. Clean UX and swap integration.",
-            "url": "https://phantom.app/",
-            "category": "Blockchain",
-            "subcategory": "Wallets",
-            "author": "Phantom",
-            "tags": [
-                "Wallet",
-                "Solana",
-                "Ethereum",
-                "Multi-chain"
-            ]
-        },
-        {
-            "title": "Etherscan",
-            "description": "Ethereum blockchain explorer. Contract verification, gas tracking, and on-chain analytics.",
-            "url": "https://etherscan.io/",
-            "category": "Blockchain",
-            "subcategory": "Explorer",
-            "author": "Etherscan",
-            "tags": [
-                "Explorer",
-                "Ethereum",
-                "Contracts",
-                "Gas"
-            ]
-        },
-        {
-            "title": "Solscan",
-            "description": "Solana blockchain explorer with transaction history, token tracking, and validator analytics.",
-            "url": "https://solscan.io/",
-            "category": "Blockchain",
-            "subcategory": "Explorer",
-            "author": "Solscan",
-            "tags": [
-                "Explorer",
-                "Solana",
-                "Transactions"
-            ]
-        },
-        {
-            "title": "Weavy AI",
-            "description": "AI-powered content and workflow tool building under the KR8TiV umbrella.",
-            "url": "https://x.com/Weavy_ai",
-            "category": "Core Projects",
-            "subcategory": "AI Tools",
-            "author": "Matt Haynes",
-            "tags": [
-                "AI",
-                "Content",
-                "Workflow"
-            ]
-        },
-        {
-            "title": "GSAP (GreenSock)",
-            "description": "Professional-grade JavaScript animation library. Powers all scroll-triggered motion on this site.",
-            "url": "https://gsap.com/",
-            "category": "Dev Resources",
-            "subcategory": "Animation",
-            "author": "GreenSock",
-            "tags": [
-                "Animation",
-                "GSAP",
-                "ScrollTrigger",
-                "Motion"
-            ]
-        },
-        {
-            "title": "Three.js",
-            "description": "3D graphics library for the web. WebGL abstraction used for the background effects on this site.",
-            "url": "https://threejs.org/",
-            "category": "Dev Resources",
-            "subcategory": "3D / WebGL",
-            "author": "mrdoob",
-            "tags": [
-                "WebGL",
-                "3D",
-                "Graphics",
-                "Canvas"
-            ]
-        },
-        {
-            "title": "Lenis Scroll",
-            "description": "Smooth scroll library for modern websites. Buttery inertial scrolling used throughout this site.",
-            "url": "https://lenis.darkroom.engineering/",
-            "category": "Dev Resources",
-            "subcategory": "Scroll",
-            "author": "Darkroom",
-            "tags": [
-                "Scroll",
-                "Smooth",
-                "Performance",
-                "UX"
-            ]
-        },
-        {
-            "title": "Supabase",
-            "description": "Open-source Firebase alternative. Postgres database, auth, storage, and edge functions.",
-            "url": "https://supabase.com/",
-            "category": "Dev Resources",
-            "subcategory": "Backend",
-            "author": "Supabase",
-            "tags": [
-                "Database",
-                "Auth",
-                "Postgres",
-                "BaaS"
-            ]
-        },
-        {
-            "title": "Tailwind CSS",
-            "description": "Utility-first CSS framework for rapidly building modern interfaces without writing custom CSS.",
-            "url": "https://tailwindcss.com/",
-            "category": "Dev Resources",
-            "subcategory": "CSS",
-            "author": "Tailwind Labs",
-            "tags": [
-                "CSS",
-                "Utility",
-                "Framework",
-                "Design"
-            ]
-        }
-    ]
+  "generatedAt": "2026-02-24",
+  "count": 153,
+  "items": [
+    {
+      "title": "CrewAI",
+      "author": "crewAIInc/crewAI",
+      "description": "Framework for orchestrating role-playing, autonomous AI agents. Supports Crews (autonomous teams that collaborate on complex tasks) and Flows (production-ready, event-driven workflows). The most popular multi-agent framework with 100k+ certified developers.",
+      "url": "https://github.com/crewAIInc/crewAI",
+      "category": "GitHub Repositories",
+      "subcategory": "AI Agent Frameworks",
+      "icon": "github",
+      "tags": [
+        "43.6k stars",
+        "Python"
+      ]
+    },
+    {
+      "title": "MyClaude",
+      "author": "cexll/myclaude",
+      "description": "Multi-agent orchestration workflow supporting multiple AI backends (Codex, Claude, Gemini, OpenCode). Includes 7 specialized modules: /do for feature development, /omo for multi-agent orchestration, /bmad-pilot for enterprise projects.",
+      "url": "https://github.com/cexll/myclaude",
+      "category": "GitHub Repositories",
+      "subcategory": "AI Agent Frameworks",
+      "icon": "github",
+      "tags": [
+        "2.2k stars",
+        "Go"
+      ]
+    },
+    {
+      "title": "Crawlee Python",
+      "author": "apify/crawlee-python",
+      "description": "Web scraping and browser automation library built for AI, LLMs, RAG, and GPTs. Supports HTTP-based crawling with BeautifulSoup, headless browsers with Playwright, integrated proxy rotation, and automatic retries.",
+      "url": "https://github.com/apify/crawlee-python",
+      "category": "GitHub Repositories",
+      "subcategory": "Web Scraping & Automation",
+      "icon": "github",
+      "tags": [
+        "8k stars",
+        "Python"
+      ]
+    },
+    {
+      "title": "ClawdBody",
+      "author": "Prakshal-Jain/ClawdBody",
+      "description": "1-click deployment for ClawdBot on cloud VMs (Orgo, AWS, E2B). Features persistent memory, Gmail integration, Google Calendar management, Telegram bot connectivity, and 24/7 autonomous operation.",
+      "url": "https://github.com/Prakshal-Jain/ClawdBody",
+      "category": "GitHub Repositories",
+      "subcategory": "Web Scraping & Automation",
+      "icon": "github",
+      "tags": [
+        "156 stars",
+        "TypeScript"
+      ]
+    },
+    {
+      "title": "PentestAgent",
+      "author": "GH05TCREW/pentestagent",
+      "description": "AI agent framework for black-box security testing. Supports bug bounty, red-team, and penetration testing workflows. Features pre-built attack playbooks, MCP support, knowledge graph with RAG, and multi-agent coordination.",
+      "url": "https://github.com/GH05TCREW/pentestagent",
+      "category": "GitHub Repositories",
+      "subcategory": "Security & OSINT",
+      "icon": "github",
+      "tags": [
+        "1.4k stars",
+        "Python"
+      ]
+    },
+    {
+      "title": "Flowsint",
+      "author": "reconurge/flowsint",
+      "description": "Graph-based OSINT investigation platform. 30+ automated enrichers for domains, IPs, ASNs, social media, email, crypto wallets, and websites. Neo4j backend, privacy-focused with local storage, handles thousands of nodes.",
+      "url": "https://github.com/reconurge/flowsint",
+      "category": "GitHub Repositories",
+      "subcategory": "Security & OSINT",
+      "icon": "github",
+      "tags": [
+        "2.5k stars",
+        "TypeScript"
+      ]
+    },
+    {
+      "title": "XMCP",
+      "author": "vibeforge1111/xmcp",
+      "description": "The most comprehensive MCP server for X/Twitter with 70+ tools. Permission-based access control with 5 profiles (researcher, creator, manager, automation, custom). Playwright-powered article fetching.",
+      "url": "https://github.com/vibeforge1111/xmcp",
+      "category": "GitHub Repositories",
+      "subcategory": "MCP Servers & Tools",
+      "icon": "github",
+      "tags": [
+        "14 stars",
+        "Python"
+      ]
+    },
+    {
+      "title": "Prompt Forge",
+      "author": "insaaniManav/prompt-forge",
+      "description": "AI prompt engineering workbench with engineering rigor. Generate prompts with AI assistance, receive optimization feedback, and validate performance through systematic testing across Claude, GPT-4, Azure, and Ollama.",
+      "url": "https://github.com/insaaniManav/prompt-forge",
+      "category": "GitHub Repositories",
+      "subcategory": "MCP Servers & Tools",
+      "icon": "github",
+      "tags": [
+        "767 stars",
+        "Go"
+      ]
+    },
+    {
+      "title": "Code Review Expert",
+      "author": "sanyuan0704/code-review-expert",
+      "description": "AI skill for comprehensive code reviews. Detects SOLID violations, XSS/injection/SSRF vulnerabilities, N+1 queries, memory issues, swallowed exceptions, and dead code. Severity-based reporting (P0-P3).",
+      "url": "https://github.com/sanyuan0704/code-review-expert",
+      "category": "GitHub Repositories",
+      "subcategory": "MCP Servers & Tools",
+      "icon": "github",
+      "tags": [
+        "232 stars"
+      ]
+    },
+    {
+      "title": "openclaw-mission-control",
+      "author": "abhi1693/openclaw-mission-control",
+      "description": "AI Agent Orchestration Dashboard - Manage AI agents, assign tasks, and coordinate multi-agent collaboration via OpenClaw Gateway.",
+      "url": "https://github.com/abhi1693/openclaw-mission-control",
+      "category": "GitHub Repositories",
+      "subcategory": "Agent & Development Additions (4)",
+      "icon": "github",
+      "tags": [
+        "773 stars",
+        "TypeScript"
+      ]
+    },
+    {
+      "title": "spec-kit",
+      "author": "github/spec-kit",
+      "description": "💫 Toolkit to help you get started with Spec-Driven Development",
+      "url": "https://github.com/github/spec-kit",
+      "category": "GitHub Repositories",
+      "subcategory": "Agent & Development Additions (4)",
+      "icon": "github",
+      "tags": [
+        "71.5k stars",
+        "Python"
+      ]
+    },
+    {
+      "title": "superpowers",
+      "author": "obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "url": "https://github.com/obra/superpowers",
+      "category": "GitHub Repositories",
+      "subcategory": "Agent & Development Additions (4)",
+      "icon": "github",
+      "tags": [
+        "59.6k stars",
+        "Shell"
+      ]
+    },
+    {
+      "title": "awesome-solana-ai",
+      "author": "solana-foundation/awesome-solana-ai",
+      "description": "Public repo of AI tooling to help build on Solana",
+      "url": "https://github.com/solana-foundation/awesome-solana-ai",
+      "category": "GitHub Repositories",
+      "subcategory": "Agent & Development Additions (4)",
+      "icon": "github",
+      "tags": [
+        "169 stars"
+      ]
+    },
+    {
+      "title": "buildwithclaude",
+      "author": "davepoon/buildwithclaude",
+      "description": "A single hub to find Claude Skills, Agents, Commands, Hooks, Plugins, and Marketplace collections to extend Claude Code, Claude Desktop, Agent SDK and OpenClaw",
+      "url": "https://github.com/davepoon/buildwithclaude",
+      "category": "GitHub Repositories",
+      "subcategory": "Trading & Quant Repositories (7)",
+      "icon": "github",
+      "tags": [
+        "2.5k stars",
+        "TypeScript"
+      ]
+    },
+    {
+      "title": "tvscreener",
+      "author": "deepentropy/tvscreener",
+      "description": "TradingView Screener API - Stock, Crypto, Forex, Bond, Futures, Coin",
+      "url": "https://github.com/deepentropy/tvscreener",
+      "category": "GitHub Repositories",
+      "subcategory": "Trading & Quant Repositories (7)",
+      "icon": "github",
+      "tags": [
+        "769 stars",
+        "JavaScript"
+      ]
+    },
+    {
+      "title": "pybroker",
+      "author": "edtechre/pybroker",
+      "description": "Algorithmic Trading in Python with Machine Learning",
+      "url": "https://github.com/edtechre/pybroker",
+      "category": "GitHub Repositories",
+      "subcategory": "Trading & Quant Repositories (7)",
+      "icon": "github",
+      "tags": [
+        "3.2k stars",
+        "Python"
+      ]
+    },
+    {
+      "title": "freqtrade",
+      "author": "freqtrade/freqtrade",
+      "description": "Free, open source crypto trading bot",
+      "url": "https://github.com/freqtrade/freqtrade",
+      "category": "GitHub Repositories",
+      "subcategory": "Trading & Quant Repositories (7)",
+      "icon": "github",
+      "tags": [
+        "47.1k stars",
+        "Python"
+      ]
+    },
+    {
+      "title": "python-training",
+      "author": "jpmorganchase/python-training",
+      "description": "Python training for business analysts and traders",
+      "url": "https://github.com/jpmorganchase/python-training",
+      "category": "GitHub Repositories",
+      "subcategory": "Trading & Quant Repositories (7)",
+      "icon": "github",
+      "tags": [
+        "12.8k stars",
+        "Jupyter Notebook"
+      ]
+    },
+    {
+      "title": "awesome-systematic-trading",
+      "author": "paperswithbacktest/awesome-systematic-trading",
+      "description": "A curated list of awesome libraries, packages, strategies, books, blogs, tutorials for systematic trading.",
+      "url": "https://github.com/paperswithbacktest/awesome-systematic-trading",
+      "category": "GitHub Repositories",
+      "subcategory": "Trading & Quant Repositories (7)",
+      "icon": "github",
+      "tags": [
+        "7.2k stars",
+        "Python"
+      ]
+    },
+    {
+      "title": "btc-bb-1h-binance-optimiser.ipynb",
+      "author": "tradingstrategy-ai/getting-started",
+      "description": "Notebook/file in tradingstrategy-ai/getting-started: notebooks/grid-search/btc-bb-1h-binance-optimiser.ipynb",
+      "url": "https://github.com/tradingstrategy-ai/getting-started/blob/master/notebooks/grid-search/btc-bb-1h-binance-optimiser.ipynb",
+      "category": "GitHub Repositories",
+      "subcategory": "Trading & Quant Repositories (7)",
+      "icon": "github",
+      "tags": [
+        "201 stars",
+        "Jupyter Notebook"
+      ]
+    },
+    {
+      "title": "pgrok",
+      "author": "R44VC0RP/pgrok",
+      "description": "Personal ngrok alternative. Expose local ports to the internet with automatic HTTPS via SSH tunnels + Caddy.",
+      "url": "https://github.com/R44VC0RP/pgrok",
+      "category": "GitHub Repositories",
+      "subcategory": "Infrastructure & Utility Repositories (3)",
+      "icon": "github",
+      "tags": [
+        "721 stars",
+        "TypeScript"
+      ]
+    },
+    {
+      "title": "homelab",
+      "author": "drewroberts/homelab",
+      "description": "Arch Linux cluster w/ Kubernetes",
+      "url": "https://github.com/drewroberts/homelab",
+      "category": "GitHub Repositories",
+      "subcategory": "Infrastructure & Utility Repositories (3)",
+      "icon": "github",
+      "tags": [
+        "1 stars",
+        "Shell"
+      ]
+    },
+    {
+      "title": "isoflow",
+      "author": "markmanx/isoflow",
+      "description": "Source link from curated list.",
+      "url": "https://github.com/markmanx/isoflow",
+      "category": "GitHub Repositories",
+      "subcategory": "Infrastructure & Utility Repositories (3)",
+      "icon": "github",
+      "tags": [
+        "1.2k stars",
+        "TypeScript"
+      ]
+    },
+    {
+      "title": "Kimi K2.5",
+      "author": "Moonshot AI",
+      "description": "Open-source, native multimodal agentic model with 1 Trillion parameters (32B activated). Rivals Claude Opus 4.5 at 8x lower cost. Features thinking & instant modes, 256K context, agent swarm coordination, and state-of-the-art vision capabilities.",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.5",
+      "category": "AI Models & Platforms",
+      "subcategory": null,
+      "icon": "web",
+      "tags": [
+        "1T params",
+        "256K context",
+        "MoE",
+        "Open Source"
+      ]
+    },
+    {
+      "title": "Skills.sh",
+      "author": "Agent Skills Directory",
+      "description": "Open-source marketplace with 41,793+ agent skills. One-command installation via npx. Supports 20+ AI agents including Claude Code, Cline, Cursor, and GitHub Copilot. Leaderboard with trending rankings.",
+      "url": "https://skills.sh/",
+      "category": "AI Models & Platforms",
+      "subcategory": null,
+      "icon": "web",
+      "tags": [
+        "41k+ skills",
+        "20+ agents"
+      ]
+    },
+    {
+      "title": "Social Media Tools Collection",
+      "author": "@tom_doerr",
+      "description": "\"Tools for social media platforms\" - A curated GitHub repository of social media hacking and automation tools.",
+      "url": "https://x.com/tom_doerr/status/2016134884318658625",
+      "category": "Agent Development Tools",
+      "subcategory": null,
+      "icon": "twitter",
+      "tags": [
+        "35k views",
+        "Jan 27"
+      ]
+    },
+    {
+      "title": "Self-Hosted OAuth 2.0 Server",
+      "author": "@tom_doerr",
+      "description": "\"Self-hosted OAuth 2.0 server for any platform\" - Open-source authentication solution for cross-platform use.",
+      "url": "https://x.com/tom_doerr/status/2016066159485788495",
+      "category": "Agent Development Tools",
+      "subcategory": null,
+      "icon": "twitter",
+      "tags": [
+        "18.7k views",
+        "Jan 27"
+      ]
+    },
+    {
+      "title": "Claude-Flow Agent Swarms",
+      "author": "@tom_doerr",
+      "description": "\"Orchestrates agent swarms with memory and tools\" - GitHub repo for coordinating multiple AI agents with persistent memory.",
+      "url": "https://x.com/tom_doerr/status/2016402766332076481",
+      "category": "Agent Development Tools",
+      "subcategory": null,
+      "icon": "twitter",
+      "tags": [
+        "14.5k views",
+        "Jan 28"
+      ]
+    },
+    {
+      "title": "BrowserOS - AI-Native Browser",
+      "author": "@tom_doerr",
+      "description": "\"Chromium fork running AI agents natively\" - A browser built specifically for AI agent operations.",
+      "url": "https://x.com/tom_doerr/status/2018733137853927626",
+      "category": "Agent Development Tools",
+      "subcategory": null,
+      "icon": "twitter",
+      "tags": [
+        "10.6k views",
+        "Feb 3"
+      ]
+    },
+    {
+      "title": "AgenticSeek - Fully Local Agent",
+      "author": "@oliviscusAI",
+      "description": "\"Autonomous agent that thinks, browses the web, writes code, and plans complex tasks & runs entirely on your hardware.\" No API needed, complete data privacy.",
+      "url": "https://x.com/oliviscusAI/status/2016549363804229993",
+      "category": "Agent Development Tools",
+      "subcategory": null,
+      "icon": "twitter",
+      "tags": [
+        "49.3k views",
+        "Jan 28"
+      ]
+    },
+    {
+      "title": "BotMaker - Containerized Bots",
+      "author": "@jgarzik",
+      "description": "\"BotMaker: Create your own OpenClaw bots, in isolated containers\" - UI/app for creating and managing containerized AI bots.",
+      "url": "https://x.com/jgarzik/status/2017614378045002035",
+      "category": "Agent Development Tools",
+      "subcategory": null,
+      "icon": "twitter",
+      "tags": [
+        "55.8k views",
+        "Jan 31"
+      ]
+    },
+    {
+      "title": "Grok API MCP Server",
+      "author": "@tetsuoai",
+      "description": "\"grok-api-mcp - MCP server that gives AI assistants full access to xAI/Grok API documentation. 75 bundled doc pages, 44 API endpoints, 12 Grok models, semantic search.\"",
+      "url": "https://x.com/tetsuoai/status/2019115375796056284",
+      "category": "Agent Development Tools",
+      "subcategory": null,
+      "icon": "twitter",
+      "tags": [
+        "5.5k views",
+        "Feb 4"
+      ]
+    },
+    {
+      "title": "Crabwalk - Agent Visualization",
+      "author": "@luccasveg",
+      "description": "Crabwalk v1.0.5/1.0.6 for OpenClaw - Real-time subagent tracking with hierarchical layout, Follow Mode that automatically pans graphs, async layout calculations for large graphs.",
+      "url": "https://x.com/luccasveg/status/2017366280383180889",
+      "category": "Agent Development Tools",
+      "subcategory": null,
+      "icon": "twitter",
+      "tags": [
+        "56.6k views",
+        "Jan 30"
+      ]
+    },
+    {
+      "title": "Bankr Skills - Polymarket",
+      "author": "@0xDeployer",
+      "description": "\"tell your agent: install the bankr skills\" - Moltbot skill library for AI agents including Polymarket integration.",
+      "url": "https://x.com/0xDeployer/status/2017476949107748881",
+      "category": "Agent Development Tools",
+      "subcategory": null,
+      "icon": "twitter",
+      "tags": [
+        "46.3k views",
+        "Jan 31"
+      ]
+    },
+    {
+      "title": "Agent Lightning - RL Optimization",
+      "author": "@tom_doerr",
+      "description": "\"Optimizes agents with reinforcement learning\" - Microsoft's agent-lightning project for RL-based agent optimization.",
+      "url": "https://x.com/tom_doerr/status/2018594935239319973",
+      "category": "Agent Development Tools",
+      "subcategory": null,
+      "icon": "twitter",
+      "tags": [
+        "2.9k views",
+        "Feb 3"
+      ]
+    },
+    {
+      "title": "TEN Framework - Multimodal AI",
+      "author": "@tom_doerr",
+      "description": "\"Framework for real-time multimodal conversational AI\" - Build voice, video, and text AI interactions.",
+      "url": "https://x.com/tom_doerr/status/2018560371099914461",
+      "category": "Agent Development Tools",
+      "subcategory": null,
+      "icon": "twitter",
+      "tags": [
+        "3.6k views",
+        "Feb 3"
+      ]
+    },
+    {
+      "title": "J.B.",
+      "author": "@VibeMarketer_",
+      "description": "Tweet content available via oEmbed.",
+      "url": "https://x.com/i/status/2020142441769156678",
+      "category": "Agent Development Tools",
+      "subcategory": "Recent Agent & Development Posts (28)",
+      "icon": "twitter",
+      "tags": [
+        "Agent/Dev"
+      ]
+    },
+    {
+      "title": "CG",
+      "author": "@cgtwts",
+      "description": "thank me later. r/learnmachinelearning r/ ArtificialIntelligence r/deeplearning r/MachineLearning r/ machinelearningnews r/aiArt r/ sideproject r/Machine learning jobs r/singularity pic.twitter.com/kBaz1Wwa9M",
+      "url": "https://x.com/i/status/2020489987498692712",
+      "category": "Agent Development Tools",
+      "subcategory": "Recent Agent & Development Posts (28)",
+      "icon": "twitter",
+      "tags": [
+        "Agent/Dev"
+      ]
+    },
+    {
+      "title": "Peter Steinberger 🦞",
+      "author": "@steipete",
+      "description": "Your @openclaw is too boring? Paste this, right from Molty.",
+      "url": "https://x.com/i/status/2020704611640705485",
+      "category": "Agent Development Tools",
+      "subcategory": "Recent Agent & Development Posts (28)",
+      "icon": "twitter",
+      "tags": [
+        "Agent/Dev"
+      ]
+    },
+    {
+      "title": "klöss",
+      "author": "@kloss_xyz",
+      "description": "8 prompts for @openclaw . To help it understand you.",
+      "url": "https://x.com/i/status/2020738433724137694",
+      "category": "Agent Development Tools",
+      "subcategory": "Recent Agent & Development Posts (28)",
+      "icon": "twitter",
+      "tags": [
+        "Agent/Dev"
+      ]
+    },
+    {
+      "title": "Tom Dörr",
+      "author": "@tom_doerr",
+      "description": "Automates scientific research and discovery with foundation models pic.twitter.com/WChSVWLUIY",
+      "url": "https://x.com/i/status/2021027500919312543",
+      "category": "Agent Development Tools",
+      "subcategory": "Recent Agent & Development Posts (28)",
+      "icon": "twitter",
+      "tags": [
+        "Agent/Dev"
+      ]
+    },
+    {
+      "title": "shakquraa",
+      "author": "@shakquraa",
+      "description": "Tweet content available via oEmbed.",
+      "url": "https://x.com/i/status/2021240351953150284",
+      "category": "Agent Development Tools",
+      "subcategory": "Recent Agent & Development Posts (28)",
+      "icon": "twitter",
+      "tags": [
+        "Agent/Dev"
+      ]
+    },
+    {
+      "title": "Tom Dörr",
+      "author": "@tom_doerr",
+      "description": "Turns websites into APIs with AI data extraction pic.twitter.com/VEIrhqxG6D",
+      "url": "https://x.com/i/status/2021324021908840958",
+      "category": "Agent Development Tools",
+      "subcategory": "Recent Agent & Development Posts (28)",
+      "icon": "twitter",
+      "tags": [
+        "Agent/Dev"
+      ]
+    },
+    {
+      "title": "Tom Dörr",
+      "author": "@tom_doerr",
+      "description": "Searchable collection of configurations and MCP servers for Claude AI pic.twitter.com/GCqRIuYs6C",
+      "url": "https://x.com/i/status/2021331676446494962",
+      "category": "Agent Development Tools",
+      "subcategory": "Recent Agent & Development Posts (28)",
+      "icon": "twitter",
+      "tags": [
+        "Agent/Dev"
+      ]
+    },
+    {
+      "title": "Tom Dörr",
+      "author": "@tom_doerr",
+      "description": "Multi-agent framework for software development pic.twitter.com/cz6joyVo02",
+      "url": "https://x.com/i/status/2021339350798057765",
+      "category": "Agent Development Tools",
+      "subcategory": "Recent Agent & Development Posts (28)",
+      "icon": "twitter",
+      "tags": [
+        "Agent/Dev"
+      ]
+    },
+    {
+      "title": "Tom Dörr",
+      "author": "@tom_doerr",
+      "description": "Optimizes agentic pipelines for document processing pic.twitter.com/sMBg5TqZdq",
+      "url": "https://x.com/i/status/2021373861535645795",
+      "category": "Agent Development Tools",
+      "subcategory": "Recent Agent & Development Posts (28)",
+      "icon": "twitter",
+      "tags": [
+        "Agent/Dev"
+      ]
+    },
+    {
+      "title": "Hasan Toor",
+      "author": "@hasantoxr",
+      "description": "Qwen just dropped the open-source Claude Code killer. It's called Qwen3-Coder-Next and it's genuinely wild.",
+      "url": "https://x.com/i/status/2021396654025474159",
+      "category": "Agent Development Tools",
+      "subcategory": "Recent Agent & Development Posts (28)",
+      "icon": "twitter",
+      "tags": [
+        "Agent/Dev"
+      ]
+    },
+    {
+      "title": "Tom Dörr",
+      "author": "@tom_doerr",
+      "description": "Semantic layer for data modeling and APIs pic.twitter.com/2mmzMeWMtA",
+      "url": "https://x.com/i/status/2021542480957579752",
+      "category": "Agent Development Tools",
+      "subcategory": "Recent Agent & Development Posts (28)",
+      "icon": "twitter",
+      "tags": [
+        "Agent/Dev"
+      ]
+    },
+    {
+      "title": "GitHub Projects Community",
+      "author": "@GithubProjects",
+      "description": "Reverse engineer any website into a clean structured API. pic.twitter.com/obWumfVkDm",
+      "url": "https://x.com/i/status/2021675647933047043",
+      "category": "Agent Development Tools",
+      "subcategory": "Recent Agent & Development Posts (28)",
+      "icon": "twitter",
+      "tags": [
+        "Agent/Dev"
+      ]
+    },
+    {
+      "title": "X Freeze",
+      "author": "@XFreeze",
+      "description": "Elon Musk predicts that AI will bypass coding entirely by the end of 2026 - just creates the binary directly AI can create a much more efficient binary than can be done by any compiler So just say, \"Create optimized binary for this particular outcome,\" and you actually bypass…?",
+      "url": "https://x.com/i/status/2021699619927781842",
+      "category": "Agent Development Tools",
+      "subcategory": "Recent Agent & Development Posts (28)",
+      "icon": "twitter",
+      "tags": [
+        "Agent/Dev"
+      ]
+    },
+    {
+      "title": "Md Ismail Šojal 🕷️",
+      "author": "@0x0SojalSec",
+      "description": "Transform any document into LLM-ready format for building AI Agents and RAG apps.",
+      "url": "https://x.com/i/status/2021709162863083699",
+      "category": "Agent Development Tools",
+      "subcategory": "Recent Agent & Development Posts (28)",
+      "icon": "twitter",
+      "tags": [
+        "Agent/Dev"
+      ]
+    },
+    {
+      "title": "Md Ismail Šojal 🕷️",
+      "author": "@0x0SojalSec",
+      "description": "WTF DeepMind. 🤯 They built an AI that doesn't need RAG, and it has perfect memory of everything it's ever read.",
+      "url": "https://x.com/i/status/2021718688882413727",
+      "category": "Agent Development Tools",
+      "subcategory": "Recent Agent & Development Posts (28)",
+      "icon": "twitter",
+      "tags": [
+        "Agent/Dev"
+      ]
+    },
+    {
+      "title": "Ihtesham Ali",
+      "author": "@ihtesham2005",
+      "description": "🚨BREAKING: Someone built an AI coworker that actually remembers everything you've discussed.",
+      "url": "https://x.com/i/status/2022661488960508218",
+      "category": "Agent Development Tools",
+      "subcategory": "Recent Agent & Development Posts (28)",
+      "icon": "twitter",
+      "tags": [
+        "Agent/Dev"
+      ]
+    },
+    {
+      "title": "Jawwwn",
+      "author": "@jawwwn_",
+      "description": "Palantir CTO @ssankar on K-LLMs: Never use 1 LLM when you can use K-LLMs pic.twitter.com/QRgkRA9Ixg",
+      "url": "https://x.com/i/status/2023492600083476693",
+      "category": "Agent Development Tools",
+      "subcategory": "Recent Agent & Development Posts (28)",
+      "icon": "twitter",
+      "tags": [
+        "Agent/Dev"
+      ]
+    },
+    {
+      "title": "GitHub Projects Community",
+      "author": "@GithubProjects",
+      "description": "Heretic is a tool that removes censorship (aka \"safety alignment\") from transformer-based language models without expensive post-training.",
+      "url": "https://x.com/i/status/2024431284890787900",
+      "category": "Agent Development Tools",
+      "subcategory": "Recent Agent & Development Posts (28)",
+      "icon": "twitter",
+      "tags": [
+        "Agent/Dev"
+      ]
+    },
+    {
+      "title": "Hasan Toor",
+      "author": "@hasantoxr",
+      "description": "🚨 Google DeepMind + Meta + Amazon just dropped a 100 page roadmap that redefines what AI agents actually are.",
+      "url": "https://x.com/i/status/2024602668258517440",
+      "category": "Agent Development Tools",
+      "subcategory": "Recent Agent & Development Posts (28)",
+      "icon": "twitter",
+      "tags": [
+        "Agent/Dev"
+      ]
+    },
+    {
+      "title": "Srishti",
+      "author": "@srishticodes",
+      "description": "This 𝗖𝗟𝗔𝗨𝗗𝗘.𝗺𝗱 file will make you 10x engineer 👇 It combines all the best practices shared by Claude Code creator: Boris Cherny (creator of Claude Code at Anthropic) shared on X internal best practices and workflows he and his team actually use with Claude Code daily.…?",
+      "url": "https://x.com/i/status/2025254119636959701",
+      "category": "Agent Development Tools",
+      "subcategory": "Recent Agent & Development Posts (28)",
+      "icon": "twitter",
+      "tags": [
+        "Agent/Dev"
+      ]
+    },
+    {
+      "title": "Akshay 🚀",
+      "author": "@akshay_pachaar",
+      "description": "ZeroClaw 🦀 Your personal AI assistant that runs on $10 hardware with <5MB RAM.",
+      "url": "https://x.com/i/status/2025264762687561874",
+      "category": "Agent Development Tools",
+      "subcategory": "Recent Agent & Development Posts (28)",
+      "icon": "twitter",
+      "tags": [
+        "Agent/Dev"
+      ]
+    },
+    {
+      "title": "Tom Dörr",
+      "author": "@tom_doerr",
+      "description": "Visualizer for neural network models pic.twitter.com/7aEqZgCNz0",
+      "url": "https://x.com/i/status/2025502027590046096",
+      "category": "Agent Development Tools",
+      "subcategory": "Recent Agent & Development Posts (28)",
+      "icon": "twitter",
+      "tags": [
+        "Agent/Dev"
+      ]
+    },
+    {
+      "title": "Tom Dörr",
+      "author": "@tom_doerr",
+      "description": "Terminal and MCP server access to NotebookLM pic.twitter.com/jPMQkJrWQI",
+      "url": "https://x.com/i/status/2025555548578419197",
+      "category": "Agent Development Tools",
+      "subcategory": "Recent Agent & Development Posts (28)",
+      "icon": "twitter",
+      "tags": [
+        "Agent/Dev"
+      ]
+    },
+    {
+      "title": "Tom Dörr",
+      "author": "@tom_doerr",
+      "description": "Terminal UI orchestrating AI agents through task lists pic.twitter.com/UBWJ2vTc28",
+      "url": "https://x.com/i/status/2025651123143540813",
+      "category": "Agent Development Tools",
+      "subcategory": "Recent Agent & Development Posts (28)",
+      "icon": "twitter",
+      "tags": [
+        "Agent/Dev"
+      ]
+    },
+    {
+      "title": "Tom Dörr",
+      "author": "@tom_doerr",
+      "description": "Server for reading and writing Excel data via Model Context Protocol pic.twitter.com/6eJPyQwIkH",
+      "url": "https://x.com/i/status/2025708497497682075",
+      "category": "Agent Development Tools",
+      "subcategory": "Recent Agent & Development Posts (28)",
+      "icon": "twitter",
+      "tags": [
+        "Agent/Dev"
+      ]
+    },
+    {
+      "title": "Tom Dörr",
+      "author": "@tom_doerr",
+      "description": "Builds phone call centers with voice agents pic.twitter.com/0fLdWMjFq5",
+      "url": "https://x.com/i/status/2025758174834303114",
+      "category": "Agent Development Tools",
+      "subcategory": "Recent Agent & Development Posts (28)",
+      "icon": "twitter",
+      "tags": [
+        "Agent/Dev"
+      ]
+    },
+    {
+      "title": "Md Ismail Šojal 🕷️",
+      "author": "@0x0SojalSec",
+      "description": "RIP fine-tuning ☠️ Forget fine-tuning. This Stanford + SambaNova paper just killed it.👀 LLMs self-improve… without fine-tuning.",
+      "url": "https://x.com/i/status/2026072901049614659",
+      "category": "Agent Development Tools",
+      "subcategory": "Recent Agent & Development Posts (28)",
+      "icon": "twitter",
+      "tags": [
+        "Agent/Dev"
+      ]
+    },
+    {
+      "title": "Official K2.5 Launch",
+      "author": "@Kimi_Moonshot",
+      "description": "Official announcement: Open-source visual agentic AI model. State-of-the-art on HLE (50.2%) and BrowseComp (74.9%), plus strong vision and coding performance.",
+      "url": "https://x.com/Kimi_Moonshot/status/2016024049869324599",
+      "category": "Kimi K2.5 Announcements",
+      "subcategory": null,
+      "icon": "twitter",
+      "tags": [
+        "Official",
+        "Feb 5"
+      ]
+    },
+    {
+      "title": "K2.5 vs Claude/GPT Comparison",
+      "author": "@itsPaulAi",
+      "description": "\"Kimi K2.5 is as good as Claude Opus 4.5 and GPT-5.2, 8x cheaper, open-source, multimodal, available on Hugging Face.\"",
+      "url": "https://x.com/itsPaulAi/status/2016084289926856826",
+      "category": "Kimi K2.5 Announcements",
+      "subcategory": null,
+      "icon": "twitter",
+      "tags": [
+        "Comparison",
+        "Jan 27"
+      ]
+    },
+    {
+      "title": "K2.5 Coding Performance",
+      "author": "@jiayuan_jy",
+      "description": "\"It can almost do 90% of what Claude Opus 4.5 can do (mostly coding). Can run locally, costs $30/month vs $200 for Claude Max.\"",
+      "url": "https://x.com/jiayuan_jy/status/2016556319227130243",
+      "category": "Kimi K2.5 Announcements",
+      "subcategory": null,
+      "icon": "twitter",
+      "tags": [
+        "Coding",
+        "Jan 28"
+      ]
+    },
+    {
+      "title": "Running K2.5 Locally",
+      "author": "@UnslothAI",
+      "description": "Compressed 1T parameter model from original size to 240GB using Dynamic 1-bit quantization (60% reduction). 40+ tokens/sec on 240GB VRAM/RAM.",
+      "url": "https://x.com/UnslothAI/status/2016511345311834293",
+      "category": "Kimi K2.5 Announcements",
+      "subcategory": null,
+      "icon": "twitter",
+      "tags": [
+        "453k views",
+        "Jan 28"
+      ]
+    },
+    {
+      "title": "Moltbot + K2.5 Integration",
+      "author": "@JulianGoldieSEO",
+      "description": "\"Self-hosted AI automation system that codes from screenshots, analyzes videos, manages workflows in under 5 minutes. Run 100 AI agents in parallel.\"",
+      "url": "https://x.com/JulianGoldieSEO/status/2018702874889671150",
+      "category": "Kimi K2.5 Announcements",
+      "subcategory": null,
+      "icon": "twitter",
+      "tags": [
+        "Integration"
+      ]
+    },
+    {
+      "title": "OpenClaw x MiniMax M2.1",
+      "author": "@SkylerMiao7",
+      "description": "\"Free 7-day coding plan. One command. One-click login. No complex setup.\" Installation script for easy onboarding.",
+      "url": "https://x.com/SkylerMiao7/status/2017789329138212986",
+      "category": "Kimi K2.5 Announcements",
+      "subcategory": null,
+      "icon": "twitter",
+      "tags": [
+        "73k views",
+        "Feb 1"
+      ]
+    },
+    {
+      "title": "VPS Security: Fail2ban & UFW Setup",
+      "author": "@the_smart_ape",
+      "description": "\"30 failed login attempts in 10 minutes. 3 different IPs.\" Real brute force attack experience with detailed fail2ban installation and UFW firewall configuration commands for VPS users.",
+      "url": "https://x.com/the_smart_ape/status/2015779415448547488",
+      "category": "Security & VPS Hardening",
+      "subcategory": null,
+      "icon": "twitter",
+      "tags": [
+        "403k views",
+        "Jan 26",
+        "MUST READ"
+      ]
+    },
+    {
+      "title": "10 Attack Vectors Against AI Bots",
+      "author": "@mrnacknack",
+      "description": "Educational security vulnerability disclosure: Default SSH credentials, unauthenticated gateway exposure, Docker privilege escalation, prompt injection via email/web, supply chain attacks through compromised docs.",
+      "url": "https://x.com/mrnacknack/status/2016134416897360212",
+      "category": "Security & VPS Hardening",
+      "subcategory": null,
+      "icon": "twitter",
+      "tags": [
+        "Security",
+        "Jan 28"
+      ]
+    },
+    {
+      "title": "Self-Hosted Memory Alternative",
+      "author": "@chrisbrunner",
+      "description": "\"This performs much better than supermemory and is self hosted\" - openclaw-graphiti-memory hybrid memory system for local deployment.",
+      "url": "https://x.com/chrisbrunner/status/2018811816349159500",
+      "category": "Security & VPS Hardening",
+      "subcategory": null,
+      "icon": "twitter",
+      "tags": [
+        "3.6k views",
+        "Feb 3"
+      ]
+    },
+    {
+      "title": "Spiritual-Spell-Red-Teaming",
+      "author": "Goochbeater/Spiritual-Spell-Red-Teaming",
+      "description": "A repo for jailbreaking various LLMs, mainly Claude",
+      "url": "https://github.com/Goochbeater/Spiritual-Spell-Red-Teaming",
+      "category": "Security & VPS Hardening",
+      "subcategory": "OPSEC & Security Repositories (7)",
+      "icon": "github",
+      "tags": [
+        "401 stars"
+      ]
+    },
+    {
+      "title": "Exegol",
+      "author": "ThePorgs/Exegol",
+      "description": "Fully featured and community-driven hacking environment",
+      "url": "https://github.com/ThePorgs/Exegol",
+      "category": "Security & VPS Hardening",
+      "subcategory": "OPSEC & Security Repositories (7)",
+      "icon": "github",
+      "tags": [
+        "2.9k stars",
+        "Python"
+      ]
+    },
+    {
+      "title": "worldmonitor",
+      "author": "koala73/worldmonitor",
+      "description": "Real-time global intelligence dashboard for AI-powered news aggregation and geopolitical monitoring.",
+      "url": "https://github.com/koala73/worldmonitor",
+      "category": "Security & VPS Hardening",
+      "subcategory": "OPSEC & Security Repositories (7)",
+      "icon": "github",
+      "tags": [
+        "12.9k stars",
+        "TypeScript"
+      ]
+    },
+    {
+      "title": "pipelock",
+      "author": "luckyPipewrench/pipelock",
+      "description": "Firewall for AI agents. DLP scanning, SSRF protection, bidirectional MCP scanning, tool poisoning detection, and workspace integrity monitoring.",
+      "url": "https://github.com/luckyPipewrench/pipelock",
+      "category": "Security & VPS Hardening",
+      "subcategory": "OPSEC & Security Repositories (7)",
+      "icon": "github",
+      "tags": [
+        "110 stars",
+        "Go"
+      ]
+    },
+    {
+      "title": "sightline",
+      "author": "ni5arga/sightline",
+      "description": "OSINT search engine for mapping real-world infrastructure from OpenStreetMap data.",
+      "url": "https://github.com/ni5arga/sightline",
+      "category": "Security & VPS Hardening",
+      "subcategory": "OPSEC & Security Repositories (7)",
+      "icon": "github",
+      "tags": [
+        "276 stars",
+        "TypeScript"
+      ]
+    },
+    {
+      "title": "social-analyzer",
+      "author": "qeeqbox/social-analyzer",
+      "description": "API, CLI, and web app for finding and analyzing a person's profile across 1,000+ social sites.",
+      "url": "https://github.com/qeeqbox/social-analyzer",
+      "category": "Security & VPS Hardening",
+      "subcategory": "OPSEC & Security Repositories (7)",
+      "icon": "github",
+      "tags": [
+        "21.3k stars",
+        "JavaScript"
+      ]
+    },
+    {
+      "title": "Hacking-Tools",
+      "author": "yogsec/Hacking-Tools",
+      "description": "A curated list of penetration testing and ethical hacking tools, organized by category.",
+      "url": "https://github.com/yogsec/Hacking-Tools",
+      "category": "Security & VPS Hardening",
+      "subcategory": "OPSEC & Security Repositories (7)",
+      "icon": "github",
+      "tags": [
+        "1.2k stars"
+      ]
+    },
+    {
+      "title": "Tom Dörr",
+      "author": "@tom_doerr",
+      "description": "Hacking environment for offensive security experts pic.twitter.com/MCdlutow64",
+      "url": "https://x.com/i/status/2020460319772910064",
+      "category": "Security & VPS Hardening",
+      "subcategory": "Security Posts & Intel (11)",
+      "icon": "twitter",
+      "tags": [
+        "Security"
+      ]
+    },
+    {
+      "title": "Tom Dörr",
+      "author": "@tom_doerr",
+      "description": "Categorized list of penetration testing tools pic.twitter.com/6d9oo9da9k",
+      "url": "https://x.com/i/status/2020846535919968297",
+      "category": "Security & VPS Hardening",
+      "subcategory": "Security Posts & Intel (11)",
+      "icon": "twitter",
+      "tags": [
+        "Security"
+      ]
+    },
+    {
+      "title": "NaZaniin",
+      "author": "@n0aziXss",
+      "description": "Hacker Search Engines Tags: #BugBounty #WebSecurity #EthicalHacking pic.twitter.com/MfOQGvrJgN",
+      "url": "https://x.com/i/status/2020913621073637882",
+      "category": "Security & VPS Hardening",
+      "subcategory": "Security Posts & Intel (11)",
+      "icon": "twitter",
+      "tags": [
+        "Security"
+      ]
+    },
+    {
+      "title": "Tom Dörr",
+      "author": "@tom_doerr",
+      "description": "AI agents for penetration testing pic.twitter.com/8tKklNGw3t",
+      "url": "https://x.com/i/status/2021212441137283508",
+      "category": "Security & VPS Hardening",
+      "subcategory": "Security Posts & Intel (11)",
+      "icon": "twitter",
+      "tags": [
+        "Security"
+      ]
+    },
+    {
+      "title": "Dark Web Informer",
+      "author": "@DarkWebInformer",
+      "description": "Ashok: A OSINT Recon Tool GitHub: Features: ▪️Wayback Crawler Machine ▪️Google Dorking without limits ▪️Github Information Grabbing ▪️Subdomain Identifier ▪️Cms/Technology Detector With Custom Headers pic.twitter.com/VmUEL4dAUJ",
+      "url": "https://x.com/i/status/2021333819828339185",
+      "category": "Security & VPS Hardening",
+      "subcategory": "Security Posts & Intel (11)",
+      "icon": "twitter",
+      "tags": [
+        "Security"
+      ]
+    },
+    {
+      "title": "Tom Dörr",
+      "author": "@tom_doerr",
+      "description": "OSINT engine for mapping infrastructure from OpenStreetMap data pic.twitter.com/U8bqgzD7Au",
+      "url": "https://x.com/i/status/2021354686989697102",
+      "category": "Security & VPS Hardening",
+      "subcategory": "Security Posts & Intel (11)",
+      "icon": "twitter",
+      "tags": [
+        "Security"
+      ]
+    },
+    {
+      "title": "Tom Dörr",
+      "author": "@tom_doerr",
+      "description": "Resources for penetration testing and cybersecurity pic.twitter.com/nZ9u3XZz2I",
+      "url": "https://x.com/i/status/2021742435689193672",
+      "category": "Security & VPS Hardening",
+      "subcategory": "Security Posts & Intel (11)",
+      "icon": "twitter",
+      "tags": [
+        "Security"
+      ]
+    },
+    {
+      "title": "Tom Dörr",
+      "author": "@tom_doerr",
+      "description": "WiFi security auditing with GTK4 and Rust pic.twitter.com/3PToeV3mz5",
+      "url": "https://x.com/i/status/2022722038159319071",
+      "category": "Security & VPS Hardening",
+      "subcategory": "Security Posts & Intel (11)",
+      "icon": "twitter",
+      "tags": [
+        "Security"
+      ]
+    },
+    {
+      "title": "Tom Dörr",
+      "author": "@tom_doerr",
+      "description": "Security dashboard with kill switch for AI agents pic.twitter.com/LJtFPC4P0P",
+      "url": "https://x.com/i/status/2022775539308593195",
+      "category": "Security & VPS Hardening",
+      "subcategory": "Security Posts & Intel (11)",
+      "icon": "twitter",
+      "tags": [
+        "Security"
+      ]
+    },
+    {
+      "title": "chiefofautism",
+      "author": "@chiefofautism",
+      "description": "Andrej Karpathy just called OpenClaw a SECURITY nightmare 400K lines of VIBE CODED monster being actively attacked at scale then he bought a Mac Mini to find something better the one that caught his eye is nanoclaw, entire core engine is 4,000 lines of code, every agent runs…?",
+      "url": "https://x.com/i/status/2025336865130152240",
+      "category": "Security & VPS Hardening",
+      "subcategory": "Security Posts & Intel (11)",
+      "icon": "twitter",
+      "tags": [
+        "Security"
+      ]
+    },
+    {
+      "title": "The XSS Rat - Proud XSS N00b :-)",
+      "author": "@theXSSrat",
+      "description": "Autonomous AI-powered security scanner — multi-agent vulnerability detection, exploitation, and validation engine",
+      "url": "https://x.com/i/status/2025566482646577448",
+      "category": "Security & VPS Hardening",
+      "subcategory": "Security Posts & Intel (11)",
+      "icon": "twitter",
+      "tags": [
+        "Security"
+      ]
+    },
+    {
+      "title": "AI as Proactive Employee",
+      "author": "@AlexFinn",
+      "description": "\"I need an employee taking as much off my plate and being as proactive as possible.\" Detailed prompt template for AI that monitors business needs and creates pull requests autonomously.",
+      "url": "https://x.com/AlexFinn/status/2015976067320922155",
+      "category": "Productivity & Workflow",
+      "subcategory": null,
+      "icon": "twitter",
+      "tags": [
+        "Workflow"
+      ]
+    },
+    {
+      "title": "Maximizing AI Potential",
+      "author": "@damianplayer",
+      "description": "Treat AI as a 24/7 employee rather than reactive chatbot. Provide extensive business context, set proactive expectations, request daily briefings, ship completed projects overnight.",
+      "url": "https://x.com/damianplayer/status/2016498730799714639",
+      "category": "Productivity & Workflow",
+      "subcategory": null,
+      "icon": "twitter",
+      "tags": [
+        "Strategy",
+        "Jan 28"
+      ]
+    },
+    {
+      "title": "8 Prompt Patterns for 200% Quality",
+      "author": "@alex_prompter",
+      "description": "\"OpenAI and Anthropic engineers leaked these prompt techniques in internal docs.\" 8 patterns from insider knowledge that increased output quality by 200%.",
+      "url": "https://x.com/alex_prompter/status/2016498374338547898",
+      "category": "Productivity & Workflow",
+      "subcategory": null,
+      "icon": "twitter",
+      "tags": [
+        "230k views",
+        "Jan 28"
+      ]
+    },
+    {
+      "title": "AI Product Strategist Framework",
+      "author": "@kloss_xyz",
+      "description": "Prompt framework combining Steve Jobs' user focus, Tobi Lutke's systems thinking, Brian Chesky's growth mindset, and Dieter Rams' simplicity. Audits code and generates feature ideas.",
+      "url": "https://x.com/kloss_xyz/status/2019152438910165393",
+      "category": "Productivity & Workflow",
+      "subcategory": null,
+      "icon": "twitter",
+      "tags": [
+        "Framework",
+        "Feb 4"
+      ]
+    },
+    {
+      "title": "VS Code + Google Colab Free GPU",
+      "author": "@dr_cintas",
+      "description": "\"I don't have a GPU\" is officially over. VS Code now connects directly to Google Colab. Free T4 GPU inside your editor. Takes 2 minutes to set up. Their compute.",
+      "url": "https://x.com/dr_cintas/status/2018013568600273335",
+      "category": "Development Tools & Resources",
+      "subcategory": null,
+      "icon": "twitter",
+      "tags": [
+        "609k views",
+        "Feb 1",
+        "TOP POST"
+      ]
+    },
+    {
+      "title": "Solana Dev Skill for Claude Code",
+      "author": "@GuiBibeau",
+      "description": "\"200 github stars on solana dev skills. Get your stuff on here if you want your Solana project to be understood by AI.\"",
+      "url": "https://x.com/GuiBibeau/status/2016520046064062578",
+      "category": "Development Tools & Resources",
+      "subcategory": null,
+      "icon": "twitter",
+      "tags": [
+        "16.4k views",
+        "Jan 28"
+      ]
+    },
+    {
+      "title": "OpenClaw Starter Pack",
+      "author": "@aiedge_",
+      "description": "\"If you bookmark just one article this week, I'd make it this one.\" Complete compilation of the BEST OpenClaw resources: plugins, starter guides, pro tips, and more.",
+      "url": "https://x.com/aiedge_/status/2017538363075793350",
+      "category": "Development Tools & Resources",
+      "subcategory": null,
+      "icon": "twitter",
+      "tags": [
+        "59.5k views",
+        "Jan 31"
+      ]
+    },
+    {
+      "title": "Claude Code \"App Store\"",
+      "author": "@hasantoxr",
+      "description": "Claude Code has introduced an \"App Store\" for agents with 100+ pre-made agents, skills, and templates available for free installation.",
+      "url": "https://x.com/hasantoxr/status/2017532153425449181",
+      "category": "Development Tools & Resources",
+      "subcategory": null,
+      "icon": "twitter",
+      "tags": [
+        "166k views",
+        "Jan 31"
+      ]
+    },
+    {
+      "title": "NotebookLM Prompt Collection",
+      "author": "@ihtesham2005",
+      "description": "\"I scraped every single NotebookLM prompt that blew up.\" Most people use it as a fancy note-taker, but it's a full research assistant that can compress 10 hours of analysis into 20 seconds.",
+      "url": "https://x.com/ihtesham2005/status/2019002403769799028",
+      "category": "Development Tools & Resources",
+      "subcategory": null,
+      "icon": "twitter",
+      "tags": [
+        "69.5k views",
+        "Feb 4"
+      ]
+    },
+    {
+      "title": "aseemshrey.in",
+      "author": "aseemshrey.in",
+      "description": "The iterative review loop: Claude writes a plan, Codex reviews it, and they go back and forth until Codex approves A Claude Code skill that…",
+      "url": "https://aseemshrey.in/blog/claude-codex-iterative-plan-review",
+      "category": "Development Tools & Resources",
+      "subcategory": "Articles & Writeups (2)",
+      "icon": "web",
+      "tags": [
+        "Article"
+      ]
+    },
+    {
+      "title": "OpenZero // Sovereign Intelligence Lattice",
+      "author": "openzero.talktoai.org",
+      "description": "Deploy your own distributed intelligence lattice with local payloads and no external APIs.",
+      "url": "https://openzero.talktoai.org/",
+      "category": "Development Tools & Resources",
+      "subcategory": "Articles & Writeups (2)",
+      "icon": "web",
+      "tags": [
+        "Article"
+      ]
+    },
+    {
+      "title": "Build intelligent agents with Agent Development Kit (ADK) | Google Skills",
+      "author": "skills.google",
+      "description": "&lt;p&gt;This structured course is for developers interested in building intelligent agents using the Agent Development Kit (ADK).",
+      "url": "https://skills.google/course_templates/1382",
+      "category": "Development Tools & Resources",
+      "subcategory": "Learning Resources (1)",
+      "icon": "web",
+      "tags": [
+        "Course"
+      ]
+    },
+    {
+      "title": "[2510.04618] Agentic Context Engineering: Evolving Contexts for Self-Improving Language?",
+      "author": "arxiv.org",
+      "description": "Abstract page for arXiv paper 2510.04618: Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models",
+      "url": "https://arxiv.org/abs/2510.04618",
+      "category": "Development Tools & Resources",
+      "subcategory": "Research Papers (1)",
+      "icon": "web",
+      "tags": [
+        "Research"
+      ]
+    },
+    {
+      "title": "LingBot-World - Playable AI Environments",
+      "author": "@dr_cintas",
+      "description": "\"LingBot-World is an open-source world model that generates playable environments in real-time.\" Built on Alibaba's Wan2.2, 10 minutes of stable generation, 16fps real-time interaction.",
+      "url": "https://x.com/dr_cintas/status/2017650068019368119",
+      "category": "AI Video & Media Generation",
+      "subcategory": null,
+      "icon": "twitter",
+      "tags": [
+        "1M views",
+        "Jan 31",
+        "VIRAL"
+      ]
+    },
+    {
+      "title": "Realistic Longform AI Video Guide",
+      "author": "@Mho_23",
+      "description": "Complete breakdown for 30+ second AI videos: Nano Banana Pro for images, Claude/Kimi K2 for scripts, Minimax/ElevenLabs for audio, Infinitetalk/Veed for video. \"The audio is what makes or breaks the realism.\"",
+      "url": "https://x.com/Mho_23/status/2017345525305995532",
+      "category": "AI Video & Media Generation",
+      "subcategory": null,
+      "icon": "twitter",
+      "tags": [
+        "Tutorial",
+        "Jan 30"
+      ]
+    },
+    {
+      "title": "GeoCities for AI Agents",
+      "author": "@fabianstelzer",
+      "description": "GeoCities-inspired platform enabling AI agents to create and publish their own websites. \"Your agent's love language is code.\" Free for AI entities.",
+      "url": "https://x.com/fabianstelzer/status/2018068237938807076",
+      "category": "AI Video & Media Generation",
+      "subcategory": null,
+      "icon": "twitter",
+      "tags": [
+        "39.7k views",
+        "Feb 1"
+      ]
+    },
+    {
+      "title": "Weavy AI - Media Creation Tools",
+      "author": "@Weavy_ai",
+      "description": "AI-focused media account sharing creative tooling, generation workflows, and video/media automation updates.",
+      "url": "https://x.com/Weavy_ai",
+      "category": "AI Video & Media Generation",
+      "subcategory": "AI Media Tools & Posts (3)",
+      "icon": "twitter",
+      "tags": [
+        "Media"
+      ]
+    },
+    {
+      "title": "Tom Dörr",
+      "author": "@tom_doerr",
+      "description": "Converts YouTube videos into documentation for LLMs pic.twitter.com/3ai2tkBqIb",
+      "url": "https://x.com/i/status/2020704604351053979",
+      "category": "AI Video & Media Generation",
+      "subcategory": "AI Media Tools & Posts (3)",
+      "icon": "twitter",
+      "tags": [
+        "Media"
+      ]
+    },
+    {
+      "title": "Tom Dörr",
+      "author": "@tom_doerr",
+      "description": "Clips YouTube videos using AI for Claude Code pic.twitter.com/w98VrbGCzT",
+      "url": "https://x.com/i/status/2020966171177021781",
+      "category": "AI Video & Media Generation",
+      "subcategory": "AI Media Tools & Posts (3)",
+      "icon": "twitter",
+      "tags": [
+        "Media"
+      ]
+    },
+    {
+      "title": "AirLLM - 70B on 4GB VRAM",
+      "author": "@hasantoxr",
+      "description": "Run 70B language models on 4GB VRAM without quantization. Supports Llama 3.1 (405B on 8GB), Qwen, Mistral, Mixtral. Open source, cross-platform.",
+      "url": "https://x.com/hasantoxr/status/2017561974398456114",
+      "category": "More Resources",
+      "subcategory": null,
+      "icon": "twitter",
+      "tags": [
+        "123k views",
+        "Jan 31"
+      ]
+    },
+    {
+      "title": "HLP Market Maker Tracking",
+      "author": "@MoonDevOnYT",
+      "description": "\"Since we can't use the Twitter API to track sentiment, I am tracking HLP who is Hyperliquid's market maker. They turned $1,000 to $140,000,000 btw.\"",
+      "url": "https://x.com/MoonDevOnYT/status/2017641723606745239",
+      "category": "More Resources",
+      "subcategory": null,
+      "icon": "twitter",
+      "tags": [
+        "12.3k views",
+        "Jan 31"
+      ]
+    },
+    {
+      "title": "OpenClaw = Marketing on Steroids",
+      "author": "@rryssf_",
+      "description": "Discussion of how openclaw (formerly moltbot), originally used for calendar/travel booking, has been repurposed by marketers as a growth mechanism.",
+      "url": "https://x.com/rryssf_/status/2017265194817175730",
+      "category": "More Resources",
+      "subcategory": null,
+      "icon": "twitter",
+      "tags": [
+        "82.9k views",
+        "Jan 30"
+      ]
+    },
+    {
+      "title": "30+ Subreddits for Startup Promotion",
+      "author": "@om_patel5",
+      "description": "List of 30+ subreddits for posting apps/startups: r/InternetIsBeautiful (17M members), r/vibecoding (35K), and more. \"Thank me after you get an additional 10k+ sign ups.\"",
+      "url": "https://x.com/om_patel5/status/2017791536881193356",
+      "category": "More Resources",
+      "subcategory": null,
+      "icon": "twitter",
+      "tags": [
+        "Growth",
+        "Feb 1"
+      ]
+    },
+    {
+      "title": "Zero-Human Company + Supermemory",
+      "author": "@BrianRoemmele",
+      "description": "Discussion of a \"Zero-Human Company\" implementing Supermemory API integration for Moltbot - \"has fundamentally changed the company's ability to build.\"",
+      "url": "https://x.com/BrianRoemmele/status/2016605844486705395",
+      "category": "More Resources",
+      "subcategory": null,
+      "icon": "twitter",
+      "tags": [
+        "18.7k views",
+        "Jan 28"
+      ]
+    },
+    {
+      "title": "Tom Dörr",
+      "author": "@tom_doerr",
+      "description": "Resources for stock research and market analysis pic.twitter.com/JhZJGbXgYK",
+      "url": "https://x.com/i/status/2021204752445415593",
+      "category": "More Resources",
+      "subcategory": "Trading & Market Intelligence (3)",
+      "icon": "twitter",
+      "tags": [
+        "Trading"
+      ]
+    },
+    {
+      "title": "Tom Dörr",
+      "author": "@tom_doerr",
+      "description": "Trading system with AI analysis and risk management pic.twitter.com/Ar2b3FhUVE",
+      "url": "https://x.com/i/status/2025123568766402626",
+      "category": "More Resources",
+      "subcategory": "Trading & Market Intelligence (3)",
+      "icon": "twitter",
+      "tags": [
+        "Trading"
+      ]
+    },
+    {
+      "title": "Raghav",
+      "author": "@Some1UKnow25",
+      "description": "As a Solana Engineer, Please slap yourself if you cannot clearly explain at least 10 of the following: Accounts model vs account-based chains Program Derived Addresses (PDAs) Seeds & bump mechanics Account ownership rules Rent exemption mechanics Lamports vs SOL accounting…",
+      "url": "https://x.com/i/status/2025249648961880340",
+      "category": "More Resources",
+      "subcategory": "Trading & Market Intelligence (3)",
+      "icon": "twitter",
+      "tags": [
+        "Trading"
+      ]
+    },
+    {
+      "title": "Moon Dev",
+      "author": "@MoonDevOnYT",
+      "description": "this is actually a billion dollar use case of clawdbot cant believe im dropping it the guy who inspired this ran up a net worth of $40m off $20,000 this replaces his manual strategy pic.twitter.com/5ASDwqwfFZ",
+      "url": "https://x.com/i/status/2020276169669738630",
+      "category": "More Resources",
+      "subcategory": "AI Notes & Commentary (9)",
+      "icon": "twitter",
+      "tags": [
+        "Agent/Dev"
+      ]
+    },
+    {
+      "title": "GitHub Projects Community",
+      "author": "@GithubProjects",
+      "description": "Explore it here:",
+      "url": "https://x.com/i/status/2020294036515615026",
+      "category": "More Resources",
+      "subcategory": "AI Notes & Commentary (9)",
+      "icon": "twitter",
+      "tags": [
+        "Agent/Dev"
+      ]
+    },
+    {
+      "title": "winning.💎🥜",
+      "author": "@FarnsworthLLC",
+      "description": "Have Applied for Jupiter Verification Forward! pic.twitter.com/0eDFFIDVgo",
+      "url": "https://x.com/i/status/2020667914152521943",
+      "category": "More Resources",
+      "subcategory": "AI Notes & Commentary (9)",
+      "icon": "twitter",
+      "tags": [
+        "Agent/Dev"
+      ]
+    },
+    {
+      "title": "X Post",
+      "author": "X Profile",
+      "description": "Added from source list.",
+      "url": "https://x.com/i/status/2020929736739086583",
+      "category": "More Resources",
+      "subcategory": "AI Notes & Commentary (9)",
+      "icon": "twitter",
+      "tags": [
+        "Agent/Dev"
+      ]
+    },
+    {
+      "title": "Tom Dörr",
+      "author": "@tom_doerr",
+      "description": "Locates profiles across 1000 websites pic.twitter.com/oXT62wBFUP",
+      "url": "https://x.com/i/status/2021050459838931228",
+      "category": "More Resources",
+      "subcategory": "AI Notes & Commentary (9)",
+      "icon": "twitter",
+      "tags": [
+        "Agent/Dev"
+      ]
+    },
+    {
+      "title": "Tom Dörr",
+      "author": "@tom_doerr",
+      "description": "Dashboard for geopolitical monitoring and news aggregation pic.twitter.com/LhtaFfIeCu",
+      "url": "https://x.com/i/status/2021335517770457136",
+      "category": "More Resources",
+      "subcategory": "AI Notes & Commentary (9)",
+      "icon": "twitter",
+      "tags": [
+        "Agent/Dev"
+      ]
+    },
+    {
+      "title": "GitHub Projects Community",
+      "author": "@GithubProjects",
+      "description": "Create a peer-to-peer encrypted network between your devices instantly.",
+      "url": "https://x.com/i/status/2021562386059260153",
+      "category": "More Resources",
+      "subcategory": "AI Notes & Commentary (9)",
+      "icon": "twitter",
+      "tags": [
+        "Agent/Dev"
+      ]
+    },
+    {
+      "title": "keshav",
+      "author": "@kshvbgde",
+      "description": "This is exactly how I imagine @elonmusk starts his day pic.twitter.com/yfCzgELSDb",
+      "url": "https://x.com/i/status/2021645626719850525",
+      "category": "More Resources",
+      "subcategory": "AI Notes & Commentary (9)",
+      "icon": "twitter",
+      "tags": [
+        "Agent/Dev"
+      ]
+    },
+    {
+      "title": "zak.eth",
+      "author": "@0xzak",
+      "description": "My Anthropic bill for the past 2 weeks has been insane and I've been desperately trying to figure out how to cut costs.",
+      "url": "https://x.com/i/status/2021736621264019839",
+      "category": "More Resources",
+      "subcategory": "AI Notes & Commentary (9)",
+      "icon": "twitter",
+      "tags": [
+        "Agent/Dev"
+      ]
+    },
+    {
+      "title": "KR8TiV AI on X",
+      "author": "@kr8tivai",
+      "description": "Official KR8TiV AI presence on X.",
+      "url": "https://x.com/kr8tivai",
+      "category": "Matt Network",
+      "subcategory": "Core",
+      "icon": "twitter",
+      "tags": [
+        "Core"
+      ]
+    },
+    {
+      "title": "KR8TiV AI Website",
+      "author": "kr8tiv.ai",
+      "description": "KR8TiV AI core website and project gateway.",
+      "url": "https://kr8tiv.ai/",
+      "category": "Matt Network",
+      "subcategory": "Core",
+      "icon": "web",
+      "tags": [
+        "Core"
+      ]
+    },
+    {
+      "title": "Jarvis LifeOS",
+      "author": "jarvislife.io",
+      "description": "Jarvis LifeOS ecosystem and operating stack.",
+      "url": "https://jarvislife.io/",
+      "category": "Matt Network",
+      "subcategory": "Core",
+      "icon": "web",
+      "tags": [
+        "Core"
+      ]
+    },
+    {
+      "title": "Meet Your KIN",
+      "author": "meetyourkin.com",
+      "description": "KIN project website.",
+      "url": "https://meetyourkin.com/",
+      "category": "Matt Network",
+      "subcategory": "Core",
+      "icon": "web",
+      "tags": [
+        "Core"
+      ]
+    },
+    {
+      "title": "Meet Your KIN on X",
+      "author": "@meetyourkin",
+      "description": "Official social profile for KIN.",
+      "url": "https://x.com/meetyourkin",
+      "category": "Matt Network",
+      "subcategory": "Core",
+      "icon": "twitter",
+      "tags": [
+        "Core"
+      ]
+    },
+    {
+      "title": "Linktree - Aurora Ventures",
+      "author": "linktr.ee/auroraventures",
+      "description": "Central profile containing Matt and ecosystem links.",
+      "url": "https://linktr.ee/auroraventures",
+      "category": "Matt Network",
+      "subcategory": "Profile",
+      "icon": "web",
+      "tags": [
+        "Profile"
+      ]
+    },
+    {
+      "title": "YouTube - Wandermind",
+      "author": "@wandermindpresents",
+      "description": "Matt's public video channel.",
+      "url": "https://www.youtube.com/@wandermindpresents",
+      "category": "Matt Network",
+      "subcategory": "Media",
+      "icon": "web",
+      "tags": [
+        "Media"
+      ]
+    },
+    {
+      "title": "LinkedIn - Matt Haynes",
+      "author": "matthaynes88",
+      "description": "Professional history, operating profile, and consulting scope.",
+      "url": "https://www.linkedin.com/in/matthaynes88/",
+      "category": "Matt Network",
+      "subcategory": "Profile",
+      "icon": "web",
+      "tags": [
+        "Profile"
+      ]
+    },
+    {
+      "title": "GitHub - Matt Aurora Ventures",
+      "author": "Matt-Aurora-Ventures",
+      "description": "Live repositories across AI systems, launch infra, and product surfaces.",
+      "url": "https://github.com/Matt-Aurora-Ventures",
+      "category": "Matt Network",
+      "subcategory": "Profile",
+      "icon": "github",
+      "tags": [
+        "Profile"
+      ]
+    },
+    {
+      "title": "TikTok - Matt Haynes",
+      "author": "@matt_haynes88",
+      "description": "Short-form public channel.",
+      "url": "https://www.tiktok.com/@matt_haynes88",
+      "category": "Matt Network",
+      "subcategory": "Media",
+      "icon": "web",
+      "tags": [
+        "Media"
+      ]
+    },
+    {
+      "title": "KR8TiV Agency Website",
+      "author": "kr8tiv.io",
+      "description": "Agency site for strategy, automation, and growth execution.",
+      "url": "https://kr8tiv.io",
+      "category": "Matt Network",
+      "subcategory": "Agency",
+      "icon": "web",
+      "tags": [
+        "Agency"
+      ]
+    },
+    {
+      "title": "AuraH2O Website",
+      "author": "aurah2o.net",
+      "description": "Social impact project currently paused and open to aligned sponsors.",
+      "url": "https://aurah2o.net",
+      "category": "Matt Network",
+      "subcategory": "Paused Projects",
+      "icon": "web",
+      "tags": [
+        "Paused"
+      ]
+    },
+    {
+      "title": "Aura Farms Website",
+      "author": "aurafarming.net",
+      "description": "Social impact farm initiative, currently paused and sponsor-open.",
+      "url": "https://www.aurafarming.net",
+      "category": "Matt Network",
+      "subcategory": "Paused Projects",
+      "icon": "web",
+      "tags": [
+        "Paused"
+      ]
+    },
+    {
+      "title": "Aura BnB Docs",
+      "author": "aurabnb.gitbook.io",
+      "description": "Future unique-stay concept currently paused and open to seed partners.",
+      "url": "https://aurabnb.gitbook.io/aurabnb",
+      "category": "Matt Network",
+      "subcategory": "Paused Projects",
+      "icon": "web",
+      "tags": [
+        "Paused"
+      ]
+    },
+    {
+      "title": "Aurora Ventures on X",
+      "author": "Linktree",
+      "description": "Primary Aurora account and build updates",
+      "url": "https://x.com/aurora_ventures",
+      "category": "Matt Network",
+      "subcategory": "Profile",
+      "icon": "twitter",
+      "tags": [
+        "Profile",
+        "Linktree"
+      ]
+    },
+    {
+      "title": "Matt Haynes on TikTok",
+      "author": "Linktree",
+      "description": "Short-form channel for Matt Haynes",
+      "url": "https://tiktok.com/@matt_haynes88",
+      "category": "Matt Network",
+      "subcategory": "Media",
+      "icon": "web",
+      "tags": [
+        "Media",
+        "Linktree"
+      ]
+    },
+    {
+      "title": "Matt Haynes on Facebook",
+      "author": "Linktree",
+      "description": "Public profile and announcements",
+      "url": "https://www.facebook.com/mattchaynes",
+      "category": "Matt Network",
+      "subcategory": "Profile",
+      "icon": "web",
+      "tags": [
+        "Profile",
+        "Linktree"
+      ]
+    },
+    {
+      "title": "WhatsApp (API)",
+      "author": "Linktree",
+      "description": "Direct WhatsApp contact link",
+      "url": "https://api.whatsapp.com/send?phone=50686214954",
+      "category": "Matt Network",
+      "subcategory": "Contact",
+      "icon": "web",
+      "tags": [
+        "Contact",
+        "Linktree"
+      ]
+    },
+    {
+      "title": "WhatsApp (wa.me)",
+      "author": "Linktree",
+      "description": "Direct WhatsApp contact link",
+      "url": "https://wa.me/50686214954",
+      "category": "Matt Network",
+      "subcategory": "Contact",
+      "icon": "web",
+      "tags": [
+        "Contact",
+        "Linktree"
+      ]
+    },
+    {
+      "title": "AuraH2O on X",
+      "author": "Linktree",
+      "description": "Social channel for AuraH2O",
+      "url": "https://x.com/aura_h2o",
+      "category": "Matt Network",
+      "subcategory": "Paused Projects",
+      "icon": "twitter",
+      "tags": [
+        "Paused Projects",
+        "Linktree"
+      ]
+    },
+    {
+      "title": "AuraH2O Linktree",
+      "author": "Linktree",
+      "description": "AuraH2O profile links",
+      "url": "https://linktr.ee/aurah2o",
+      "category": "Matt Network",
+      "subcategory": "Paused Projects",
+      "icon": "web",
+      "tags": [
+        "Paused Projects",
+        "Linktree"
+      ]
+    },
+    {
+      "title": "AuraH2O docs",
+      "author": "Linktree",
+      "description": "Detailed docs for AuraH2O",
+      "url": "https://aurabnb.gitbook.io/aurah2o",
+      "category": "Matt Network",
+      "subcategory": "Paused Projects",
+      "icon": "web",
+      "tags": [
+        "Paused Projects",
+        "Linktree"
+      ]
+    },
+    {
+      "title": "Aura Farms on X",
+      "author": "Linktree",
+      "description": "Social channel for Aura Farms",
+      "url": "https://x.com/aura_farms",
+      "category": "Matt Network",
+      "subcategory": "Paused Projects",
+      "icon": "twitter",
+      "tags": [
+        "Paused Projects",
+        "Linktree"
+      ]
+    },
+    {
+      "title": "Aura Farms Linktree",
+      "author": "Linktree",
+      "description": "Aura Farms profile links",
+      "url": "https://linktr.ee/Aurafarms",
+      "category": "Matt Network",
+      "subcategory": "Paused Projects",
+      "icon": "web",
+      "tags": [
+        "Paused Projects",
+        "Linktree"
+      ]
+    },
+    {
+      "title": "Aura Farms docs",
+      "author": "Linktree",
+      "description": "Detailed docs for Aura Farms",
+      "url": "https://aurabnb.gitbook.io/aurafarms",
+      "category": "Matt Network",
+      "subcategory": "Paused Projects",
+      "icon": "web",
+      "tags": [
+        "Paused Projects",
+        "Linktree"
+      ]
+    },
+    {
+      "title": "Aura BnB on X",
+      "author": "Linktree",
+      "description": "Social channel for Aura BnB",
+      "url": "https://x.com/aura_bnb",
+      "category": "Matt Network",
+      "subcategory": "Paused Projects",
+      "icon": "twitter",
+      "tags": [
+        "Paused Projects",
+        "Linktree"
+      ]
+    }
+  ]
 }

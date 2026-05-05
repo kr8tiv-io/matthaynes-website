@@ -1,0 +1,109 @@
+---
+import CommandPalette from '../components/CommandPalette.tsx';
+import VideoDirector from '../components/VideoDirector.astro';
+import { quickLinks, sameAs, siteMeta } from '../data/site';
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+  canonical?: string;
+  showVideo?: boolean;
+}
+
+const {
+  title = siteMeta.title,
+  description = siteMeta.description,
+  canonical = siteMeta.url,
+  showVideo = true
+} = Astro.props;
+
+const personSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Matt Haynes',
+  jobTitle: 'Founder & Operator',
+  description:
+    'Founder, designer, and operator building KR8TiV AI, KR8TiV Agency, Aurora Ventures, Jarvis LifeOS, and MeetYourKIN.',
+  url: 'https://matthaynes.fun/',
+  image: 'https://pbs.twimg.com/profile_images/1962378767612952576/BtofrDqF_200x200.jpg',
+  email: 'mailto:lucidbloks@gmail.com',
+  sameAs
+};
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="keywords" content="Matt Haynes, KR8TiV AI, KR8TiV Agency, Jarvis LifeOS, MeetYourKIN, Aurora Ventures, startup founder, AI automation" />
+    <meta name="author" content="Matt Haynes" />
+    <meta name="theme-color" content="#11100d" />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" type="image/png" href="/assets/media/brands/aurora-symbol.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500..800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Matt Haynes" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={siteMeta.image} />
+    <meta property="og:image:alt" content="Matt Haynes website preview" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@aurora_ventures" />
+    <meta name="twitter:creator" content="@aurora_ventures" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={siteMeta.image} />
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(personSchema)} />
+  </head>
+  <body>
+    {showVideo && <VideoDirector />}
+    <div class="site-grain" aria-hidden="true"></div>
+    <a class="skip-link" href="#content">Skip to content</a>
+    <header class="site-header" data-site-header>
+      <a class="brand-lockup" href="/" aria-label="Matt Haynes home">
+        <span class="brand-mark"></span>
+        <span>Matt Haynes</span>
+      </a>
+      <nav class="header-nav" aria-label="Primary navigation">
+        <a href="/#manifesto">Story</a>
+        <a href="/#systems">Systems</a>
+        <a href="/links/">Links</a>
+        <a href={siteMeta.bookingUrl}>Book</a>
+      </nav>
+      <button class="command-trigger" type="button" data-command-open aria-label="Open command palette">
+        <span>CMD</span>
+        <kbd>K</kbd>
+      </button>
+    </header>
+    <CommandPalette items={quickLinks} client:load />
+    <main id="content">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div>
+        <span class="eyebrow">Costa Rica / Global</span>
+        <p>Personal site and living link archive maintained by Matt Haynes. The links are collected for future reference, not blanket endorsements.</p>
+      </div>
+      <nav aria-label="Footer links">
+        <a href={siteMeta.xUrl}>X</a>
+        <a href={siteMeta.githubUrl}>GitHub</a>
+        <a href={siteMeta.email}>Email</a>
+        <a href="/links/">Links</a>
+      </nav>
+    </footer>
+    <script>
+      import '../scripts/coutureMotion.ts';
+    </script>
+  </body>
+</html>
