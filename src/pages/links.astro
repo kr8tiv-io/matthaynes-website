@@ -1,0 +1,23 @@
+---
+import LinkConsole from '../components/LinkConsole.tsx';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import linksData from '../../assets/data/links.json';
+
+const items = linksData.items;
+---
+
+<BaseLayout
+  title="Matt Haynes | Found-Link Basket"
+  description="Matt Haynes' searchable found-link basket for tools, research, references, security notes, founder resources, dev material, and future rabbit holes."
+  canonical="https://matthaynes.fun/links/"
+>
+  <section class="links-hero chapter-section" data-video-scene="hero">
+    <p class="eyebrow">Found-link basket</p>
+    <h1 data-split>Future rabbit holes, kept searchable.</h1>
+    <p>
+      This is the found-link basket: a living archive of things I save for future reference while building, researching, trading, debugging, designing, and wandering the internet with intent.
+      Some links are projects, most are not, and none are blanket endorsements.
+    </p>
+  </section>
+  <LinkConsole items={items} client:load />
+</BaseLayout>

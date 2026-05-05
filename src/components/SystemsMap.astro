@@ -1,0 +1,30 @@
+---
+import { systems } from '../data/site';
+---
+
+<section class="systems chapter-section" id="systems" data-video-scene="systems">
+  <div class="systems-copy">
+    <p class="eyebrow">03 / Operating pattern</p>
+    <h2 data-split>Design taste wired into practical leverage.</h2>
+    <p>
+      The site does not need a random 3D diagram to explain that. The system is the rhythm:
+      observe, compose, automate, launch, learn, and keep the beautiful parts visible.
+    </p>
+  </div>
+  <div class="systems-stage">
+    <div class="system-orbit" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="systems-list">
+      {systems.map((item, index) => (
+        <article data-system-card>
+          <span>{String(index + 1).padStart(2, '0')}</span>
+          <h3>{item.title}</h3>
+          <p>{item.body}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

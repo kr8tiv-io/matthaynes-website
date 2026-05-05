@@ -1,0 +1,25 @@
+---
+import { videos } from '../data/site';
+---
+
+<div class="video-director" aria-hidden="true" data-video-director>
+  <div class="video-preloader" data-video-preloader>
+    <span>Loading Costa Rica signal</span>
+    <strong>00</strong>
+  </div>
+  {videos.map((video, index) => (
+    <video
+      class:list={['video-layer', index === 0 && 'is-active']}
+      data-video-layer={video.section}
+      data-video-index={index}
+      data-src={index === 0 ? undefined : video.src}
+      src={index === 0 ? video.src : undefined}
+      autoplay={index === 0}
+      muted
+      loop
+      playsinline
+      preload={index === 0 ? 'auto' : 'none'}
+    />
+  ))}
+  <div class="video-grade" data-video-grade></div>
+</div>

@@ -1,0 +1,33 @@
+---
+import { siteMeta } from '../data/site';
+---
+
+<section class="contact-atelier chapter-section" id="contact" data-video-scene="contact">
+  <div class="contact-statement">
+    <p class="eyebrow">06 / Contact</p>
+    <h2 data-split>Bring the hard problem. Keep the room honest.</h2>
+    <p>
+      Consulting, partnerships, interviews, speaking, AI systems, founder support, and high-standard execution work are open.
+    </p>
+  </div>
+  <form class="contact-form" data-contact-form>
+    <label>
+      <span>Name</span>
+      <input name="name" autocomplete="name" required />
+    </label>
+    <label>
+      <span>Email</span>
+      <input name="email" type="email" autocomplete="email" required />
+    </label>
+    <label class="wide">
+      <span>What are we building?</span>
+      <textarea name="message" required></textarea>
+    </label>
+    <div class="form-actions">
+      <button type="submit">Compose email</button>
+      <a href={siteMeta.bookingUrl}>Book directly</a>
+    </div>
+    <p class="form-note" aria-live="polite" data-form-note></p>
+  </form>
+</section>
+

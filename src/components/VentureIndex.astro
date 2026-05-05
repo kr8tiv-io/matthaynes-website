@@ -1,0 +1,30 @@
+---
+import { ventures } from '../data/site';
+---
+
+<section class="ventures chapter-section" id="ventures" data-video-scene="systems">
+  <div class="chapter-label">
+    <span>04</span>
+    <strong>Ventures</strong>
+  </div>
+  <div class="section-intro">
+    <p class="eyebrow">Operating companies</p>
+    <h2 data-split>Two commercial engines, one founder stack.</h2>
+  </div>
+  <div class="venture-index">
+    {ventures.map((venture, index) => (
+      <article class="venture-row" style={`--i:${index}`}>
+        <span class="row-number">{String(index + 1).padStart(2, '0')}</span>
+        <div>
+          <p>{venture.tag}</p>
+          <h3>{venture.name}</h3>
+        </div>
+        <p>{venture.body}</p>
+        <div class="row-actions">
+          <a href={venture.href}>Site</a>
+          <a href={venture.repo}>Signal</a>
+        </div>
+      </article>
+    ))}
+  </div>
+</section>

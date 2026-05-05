@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.astro/
+public/assets/
+*.zip
+preview.log
+recovered-links-data.js
+github-link-candidates*.json
+.agents/
+.claude/
+.kilocode/
+.pi/
+.trae/
+.windsurf/
+skills/
+skills-lock.json
